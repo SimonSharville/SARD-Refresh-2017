@@ -1,0 +1,28 @@
+/*!
+  These are the SARD specific styles
+ */
+
+
+
+// Global styles =======================
+  @import "global/variables";
+
+  @import "global/fonts";
+
+  @import "global/typography";
+
+  @import "global/structure";
+
+
+// Bootstrap overrides =================
+
+  @import "bootstrap-overrides/bs-components";
+
+  // SARD styles =======================
+
+  @import "sard/sa-components";
+
+  @import "sard/sa-page-elements";
+
+
+
