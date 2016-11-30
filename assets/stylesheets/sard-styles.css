@@ -124,7 +124,7 @@ body {
   background-color: white; }
 
 .container .jumbotron {
-  background-color: #E50073;
+  background-color: #359E00;
   border-radius: 0px;
   padding: 0;
   margin-bottom: 0px; }
@@ -162,7 +162,7 @@ body {
     padding-right: 0px; } }
 
 .navbar-default {
-  background-color: #b20059;
+  background-color: #246b00;
   border: none; }
 
 .navbar-default .navbar-brand {
@@ -190,33 +190,33 @@ body {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #7f0040; }
+  background-color: #133800; }
 
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #7f0040;
+  color: #133800;
   background-color: transparent; }
 
 .navbar-default .navbar-toggle {
   border: none;
-  background-color: #7f0040; }
+  background-color: #133800; }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #E50073; }
+  background-color: #359E00; }
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff; }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #E50073; }
+  border-color: #359E00; }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #7f0040;
+  background-color: #133800;
   color: #fff; }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -225,7 +225,7 @@ body {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #7f0040; }
+  background-color: #133800; }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
@@ -304,7 +304,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .sa-footer-content {
   background-color: #211F0F;
-  color: #E50073;
+  color: #359E00;
   height: 40px;
   padding-top: 10px; }
 
