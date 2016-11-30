@@ -1,0 +1,69 @@
+
+
+// SARD Components
+
+// These are any SARD specific componants 
+
+// Top Nav =====================================================================
+.sa-top-nav {
+  .navbar{
+    margin-bottom: 0px;
+  }
+
+  .navbar-brand{
+    padding: 15px 10px;
+  }
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width : 767px) {
+    .navbar-form{
+      margin-left:  0px;
+      margin-right:  0px;
+      padding:      0px 15px;
+      border-top:   0px;
+      border-bottom:   0px;
+      box-shadow: none;
+    }
+
+    .navbar-nav{
+      margin: 5px 0px 0px 0px;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    .nav > li > a{
+      padding:      15px 0px;
+    }
+
+  }
+} // End sa-top-nav
+
+
+// .navBot li  {
+//     display:inline-block;    
+// }
+
+
+// Main Content =====================================================================
+
+.sa-main-content{
+   background-color: white;
+   min-height: 100%;
+   padding-bottom: 40px;
+}
+
+// Footer =====================================================================
+
+.sa-footer-content { 
+  background-color:$grey18;
+  color: $sa-client-colour;
+  height:40px;
+  padding-top: 10px;
+}
+
+.sa-footer{
+  margin-bottom: -10px;
+}
+
+

@@ -1,0 +1,46 @@
+
+
+//== Colours
+$turq:                  #00B2B2;
+$pink:                  #E50073;
+$orange:                #FF6A00;
+$yellow:                #FFB200;
+$lime:                  #A7BF30;
+$green:                 #359E00;
+$teal:                  #004D4D;
+$blue:                  #003CB8;
+$ink:                   #000078;
+$purple:                #52008C;
+$plum:                  #990099;
+$red:                   #BF0000;
+
+$sa-med-rev:            $turq;
+$sa-nurse-rev:          $orange;
+$sa-360:                $yellow;
+$sa-e-leave:            $lime;
+$sa-A4A:                $plum;
+$sa-job-planning:       $pink;
+$sa-e-rostering:        $teal;
+$sa-cap-planning:       $red;
+
+//== Greys
+$grey02:                #EDEBEB;
+$grey04:                #D9D6D6;
+$grey06:                #C7C4C2;
+$grey08:                #B5B0B0;
+$grey10:                #A39E9C;
+$grey12:                #827D7D;
+$grey14:                #615E5C;
+$grey16:                #403D3D;
+$grey18:                #211F0F;
+
+
+
+// Colour Mixins ===================
+$sa-background:         $grey08;
+
+$sa-client-colour:                $turq; 
+$sa-client-colour-light:          lighten($sa-client-colour, 5%);
+$sa-client-colour-very-light:     lighten($sa-client-colour, 10%);
+$sa-client-colour-dark:           darken($sa-client-colour, 10%);
+$sa-client-colour-very-dark:      darken($sa-client-colour, 20%);
