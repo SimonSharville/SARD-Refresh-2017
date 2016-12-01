@@ -349,16 +349,17 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .sa-sidebar {
   z-index: 100;
-  background-color: red;
   position: relative;
   top: 0px;
-  left: -15px; }
-  .sa-sidebar .sa-content {
-    height: 0px;
-    background-color: red; }
-  .sa-sidebar .panel-group {
-    width: 430px;
-    z-index: 100;
+  left: -15px;
+  min-height: 100%; }
+
+.sa-sidebar-content {
+  width: 100%;
+  height: 0px;
+  min-height: 100%; }
+  .sa-sidebar-content .panel-group {
+    margin-bottom: 0px;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateX(-100%) rotate(-90deg);
     -webkit-transform-origin: right top;
@@ -368,20 +369,29 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     -o-transform-origin: right top;
     transform: translateX(-100%) rotate(-90deg);
     transform-origin: right top; }
-  .sa-sidebar .panel-heading {
-    min-width: 430px; }
-  .sa-sidebar .panel-title {
-    height: 18px; }
-  .sa-sidebar .panel-title a {
-    float: right;
-    text-decoration: none; }
-  .sa-sidebar .panel-body {
-    height: 830px;
-    -webkit-transform: translateX(100%) rotate(90deg);
-    -webkit-transform-origin: left top;
-    -moz-transform: translateX(100%) rotate(90deg);
-    -moz-transform-origin: left top;
-    -o-transform: translateX(100%) rotate(90deg);
-    -o-transform-origin: left top;
-    transform: translateX(100%) rotate(90deg);
-    transform-origin: left top; }
+    .sa-sidebar-content .panel-group .panel {
+      margin-bottom: 0; }
+      .sa-sidebar-content .panel-group .panel + .panel {
+        margin-top: 5px; }
+    .sa-sidebar-content .panel-group .panel-heading {
+      border-bottom: 0; }
+    .sa-sidebar-content .panel-group .panel-title {
+      height: 18px; }
+    .sa-sidebar-content .panel-group .panel-title a {
+      float: right;
+      text-decoration: none; }
+    .sa-sidebar-content .panel-group .panel-heading + .panel-collapse > .panel-body, .sa-sidebar-content .panel-group .panel-group .panel-heading + .panel-collapse > .list-group {
+      border-top: 0px; }
+    .sa-sidebar-content .panel-group .panel-body {
+      height: 680px;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateX(100%) rotate(90deg);
+      -webkit-transform-origin: left top;
+      -moz-transform: translateX(100%) rotate(90deg);
+      -moz-transform-origin: left top;
+      -o-transform: translateX(100%) rotate(90deg);
+      -o-transform-origin: left top;
+      transform: translateX(100%) rotate(90deg);
+      transform-origin: left top; }
+    .sa-sidebar-content .panel-group .panel-footer {
+      border-top: 0; }
