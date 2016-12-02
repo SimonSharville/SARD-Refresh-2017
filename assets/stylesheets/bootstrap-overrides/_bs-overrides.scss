@@ -430,3 +430,103 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .panel-white > .panel-footer{ background-color:white;  color: $grey18; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
 
+// END Panels ===============================================================================
+
+// Alerts ===============================================================================
+
+.alert{
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  color:white;
+}
+
+.alert-success{
+  background-color:$success;
+  border:none;
+  a:link{ color: darken($success, 20%);}
+  a:hover, a:focus{ color: darken($success, 40%);}
+}
+
+.alert-info{
+  background-color:$info;
+  border:none;
+  a:link{ color: darken($info, 20%);}
+  a:hover, a:focus{ color: darken($info, 40%);}
+}
+
+.alert-warning{
+  background-color:$warning;
+  border:none;
+  color:black;
+  a:link{ color: darken($warning, 30%);}
+  a:hover, a:focus{ color: darken($warning, 50%);}
+}
+
+.alert-danger{
+  background-color:$danger;
+  border:none;
+  a:link{ color: darken($danger, 30%);}
+  a:hover, a:focus{ color: darken($danger, 50%);}
+}
+
+.alert-MRv{
+  background-color:$sa-MRv;
+  border:none;
+  a:link{ color: darken($sa-MRv, 20%);}
+  a:hover, a:focus{ color: darken($sa-MRv, 40%);}
+}
+
+.alert-NRv{
+  background-color:$sa-NRv;
+  border:none;
+  a:link{ color: darken($sa-NRv, 25%);}
+  a:hover, a:focus{ color: darken($sa-NRv, 40%);}
+}
+
+.alert-360{
+  background-color:$sa-360;
+  border:none;
+  a:link{ color: darken($sa-360, 30%);}
+  a:hover, a:focus{ color: darken($sa-360, 40%);}
+}
+
+.alert-eLeave{
+  background-color:$sa-eLeave;
+  border:none;
+  a:link{ color: darken($sa-eLeave, 30%);}
+  a:hover, a:focus{ color: darken($sa-eLeave, 50%);}
+}
+
+.alert-A4A{
+  background-color:$sa-A4A;
+  border:none;
+  a:link{ color: darken($sa-A4A, 20%);}
+  a:hover, a:focus{ color: darken($sa-A4A, 60%);}
+}
+
+.alert-JPL{
+  background-color:$sa-JPL;
+  border:none;
+  a:link{ color: darken($sa-JPL, 20%);}
+  a:hover, a:focus{ color: darken($sa-JPL, 40%);}
+}
+
+.alert-eRo{
+  background-color:$sa-eRo;
+  border:none;
+  a:link{ color: lighten($sa-eRo, 20%);}
+  a:hover, a:focus{ color: darken($sa-eRo, 10%);}
+}
+
+.alert-CPL{
+  background-color:$sa-CPL;
+  border:none;
+  a:link{ color: darken($sa-CPL, 20%);}
+  a:hover, a:focus{ color: darken($sa-CPL, 40%);}
+}
+
+// END Alerts ===============================================================================
+
+// Buttons ===============================================================================
+
+// END Buttons ===============================================================================
