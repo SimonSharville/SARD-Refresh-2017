@@ -14,14 +14,14 @@ $purple:                #52008C;
 $plum:                  #990099;
 $red:                   #BF0000;
 
-$sa-med-rev:            $turq;
-$sa-nurse-rev:          $orange;
+$sa-MRv:            $turq;
+$sa-NRv:          $orange;
 $sa-360:                $yellow;
-$sa-e-leave:            $lime;
+$sa-eLeave:             $lime;
 $sa-A4A:                $plum;
-$sa-job-planning:       $pink;
-$sa-e-rostering:        $teal;
-$sa-cap-planning:       $red;
+$sa-JPL:                $pink;
+$sa-eRo:                $teal;
+$sa-CPL:                $red;
 
 //  Greys ======================
 $grey02:                #EDEBEB;
@@ -36,7 +36,7 @@ $grey18:                #211F0F;
 
 //  Other Colours ==============
 $success:               #00FF00;
-$info:                  #0000FF;
+$info:                  #00CCFF;
 $warning:               #FFCC00;
 $danger:                #FF0000;
 
@@ -50,3 +50,5 @@ $sa-client-colour-light:          lighten($sa-client-colour, 5%);
 $sa-client-colour-very-light:     lighten($sa-client-colour, 10%);
 $sa-client-colour-dark:           darken($sa-client-colour, 10%);
 $sa-client-colour-very-dark:      darken($sa-client-colour, 20%);
+
+$panelBaseGrey:                   $grey04;
