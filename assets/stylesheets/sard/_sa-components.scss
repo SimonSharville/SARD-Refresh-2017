@@ -4,6 +4,41 @@
 
 // These are any SARD specific componants 
 
+// Sections ===================================================================
+
+.sa-top-section{ }
+
+.sa-main-section{ min-height: 100%;    
+  padding-bottom: 40px;
+}
+
+.sa-main-content{  // OPTIONAL
+   background-color: white;
+   min-height: 100%;
+}
+
+.sa-footer-section{ }
+
+.sa-footer-content { 
+  background-color:$grey18;
+  color: $sa-client-colour;
+  height:40px;
+  padding-top: 10px;
+}
+
+.sa-footer{
+  margin-bottom: -10px;
+}
+
+
+// Incidentals =================================================================
+.sa-indent{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+
+
 // Top Nav =====================================================================
 .sa-top-nav {
   .navbar{
@@ -45,25 +80,36 @@
 // }
 
 
-// Main Content =====================================================================
 
-.sa-main-content{
-   background-color: white;
-   min-height: 100%;
-   padding-bottom: 40px;
-}
 
-// Footer =====================================================================
+//  Divider dots ==============================================================
 
-.sa-footer-content { 
-  background-color:$grey18;
-  color: $sa-client-colour;
-  height:40px;
-  padding-top: 10px;
-}
 
-.sa-footer{
-  margin-bottom: -10px;
-}
+  .row{
+    &.sa-dots-grey {
+      background-image: url("..//graphics/dot_grey06.png");
+      background-repeat: repeat-x;
+      height: 16px;
+      background-position: -4px 0px;
+      margin: 15px -20px 25px -20px;
+    }
+
+    &.sa-dots-wht {
+      background-image: url("..//graphics/dot_white.png");
+      background-repeat: repeat-x;
+      height: 16px;
+      background-position: -4px 0px;
+      margin: 15px -20px 25px -20px;
+    }
+
+    &.sa-empty {
+      height: 40px;
+      background:none;
+    }
+  }
+
+//  Panels ==============================================================
+//  All panel styles are in _bs-overrides.scss
+//  =====================================================================
 
 

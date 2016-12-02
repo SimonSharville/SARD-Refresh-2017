@@ -4,8 +4,71 @@
 
 
 
+/*  TYPOGRAPHY GENERAL ========================================================== */
 
-// .sa-align-right{
-//   text-align: right;
-// }
+  //letter-spacing
+    $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
+    $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
+    $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
+    $single: 0.0625em; /* 16 * 0.0625 = 1px */
+    $double: 0.125em; /* 16 * 0.125 = 2px */
+  
+  
+
+  
+  h1 {
+    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+    font-size: 4.000em;
+    letter-spacing: $reduced;
+    margin-top:0;
+  }
+  
+  h2 {
+    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+    font-size: 3.000em;
+    margin-top:0;
+  }
+  
+  h3 {
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 2.000em;
+    margin-top:0;
+  }
+  
+  h4 {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.500em;
+  }
+
+  h5 {
+    font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+    font-size: 1.000em;
+  }
+
+  h6 {
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    font-size: 1.000em;
+  }
+  
+  p {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.000em;
+  }
+
+
+
+/*  TEXT LINK Styles ========================================================== */
+
+
+  a {
+    color: $turq;
+    text-decoration: none; }
+    a:hover, a:focus {
+      color: $ink;
+      text-decoration: none; }
+    a:focus {
+      // outline: 5px auto -webkit-focus-ring-color;
+      // outline-offset: -2px; 
+    }
+
 
