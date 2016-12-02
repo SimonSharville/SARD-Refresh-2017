@@ -32,6 +32,12 @@ body {
 
 // ===============================================
 // This reduces the gutter to 16px instead of 30px
+
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:white;
+}
 .row{
   padding-left: 7px;
   padding-right: 7px;

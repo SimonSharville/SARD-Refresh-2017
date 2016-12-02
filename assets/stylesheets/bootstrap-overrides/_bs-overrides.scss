@@ -4,19 +4,15 @@
 
 // This is the style overrides for any Bootstrap componants
 
-.container{
-  background-color:white;
-  
-}
+
 
 // Pageheader =====================================================================
 
 .page-header{
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   padding: 10px 10px 30px 10px;
-  border-bottom: 0px;
-  background-color:white;
+  border-bottom: 1px solid $grey04;
 }
 
 
@@ -30,36 +26,9 @@
   }
 
 .jumbotron img{
-  height: 100%;
+  width: 100%;
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 767px) {
-.jumbotron {
-    height: 95px;
-  }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-.jumbotron {
-    height: 95px;
-  }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-.jumbotron {
-    height: 124px;
-  }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-.jumbotron {
-    height: 150px;
-  }
-}
 
 
 // Navbar Default =====================================================================
@@ -206,4 +175,113 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 // END Navbar Default --------------------------------------------------
+
+
+// Panels ===============================================================================
+
+.panel{
+  border-radius:0px;
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  border:none;
+  background-color:$grey04;
+}
+
+.panel-heading{
+  border-radius:0px;
+  border-color:white;
+  h3{
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 1.500em;
+  }
+}
+
+.panel-body{ }
+
+.sa-panel-dots{
+    background-image: url("..//graphics/dot_white.png");
+    background-repeat: repeat-x;
+    height: 16px;
+    background-position: -4px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+.panel-footer{ 
+  border-radius:0px; 
+  border-color:white;
+  background-color:$grey04;
+}
+
+// Panel Default ----------------------------------------------------------------------
+
+.panel-default{ }
+
+.panel-default > .panel-heading{ background-color:$grey08; border:0; }
+
+.panel-default > .panel-body{ background-color:$grey04; }
+
+.panel-default > .sa-panel-dots{ background-color:$grey04; }
+
+.panel-default > .panel-footer{ background-color:$grey12;   color: white;   border:0;}
+
+// Panel Primary ----------------------------------------------------------------------
+
+.panel-primary{ }
+
+.panel-primary > .panel-heading{ background-color:$grey14; border:0;}
+
+.panel-primary > .panel-body{ background-color:$grey08; }
+
+.panel-primary > .sa-panel-dots{ background-color:$grey08; }
+
+.panel-primary > .panel-footer{ background-color:$grey16;  color: white; border:0;}
+
+// Panel Success ---------------------------------------------------------------------
+
+.panel-success{ }
+
+.panel-success > .panel-heading{ background-color:darken($success, 10%);   color:white;   border:0;}
+
+.panel-success > .panel-body{ background-color:lighten($success, 10%); }
+
+.panel-success > .sa-panel-dots{ background-color:lighten($success, 10%); }
+
+.panel-success > .panel-footer{ background-color:darken($success, 20%);   color: white;   border:0;}
+
+// Panel Info ---------------------------------------------------------------------
+
+.panel-info{ }
+
+.panel-info > .panel-heading{ background-color:darken($turq, 10%);   color:white;   border:0;}
+
+.panel-info > .panel-body{ background-color:lighten($turq, 0%); }
+
+.panel-info > .sa-panel-dots{ background-color:lighten($turq, 0%); }
+
+.panel-info > .panel-footer{ background-color:darken($turq, 20%);   color: white;   border:0;}
+
+// Panel Warning ---------------------------------------------------------------------
+
+.panel-warning{ }
+
+.panel-warning > .panel-heading{ background-color:black;   color:$warning;   border:0;}
+
+.panel-warning > .panel-body{ background-color:lighten($warning, 0%); }
+
+.panel-warning > .sa-panel-dots{ background-color:lighten($warning, 0%); }
+
+.panel-warning > .panel-footer{ background-color:black;   color:$warning;   border:0;}
+
+// Panel Danger ---------------------------------------------------------------------
+
+.panel-danger{ }
+
+.panel-danger > .panel-heading{ background-color:darken($danger, 20%);   color:white;   border:0;}
+
+.panel-danger > .panel-body{ background-color:lighten($danger, 0%); }
+
+.panel-danger > .sa-panel-dots{ background-color:lighten($danger, 0%); }
+
+.panel-danger > .panel-footer{ background-color:darken($danger, 30%);   color:white;   border:0;}
+
+
 
