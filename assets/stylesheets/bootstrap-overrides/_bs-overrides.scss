@@ -297,138 +297,138 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Panel Medical Revalidation ----------------------------------------------------------------------
 
-.panel-MRv{ border:none; }
+.sa-panel-MRv{ border:none; }
 
-.panel-MRv > .panel-heading{ background-color:darken($sa-MRv, 10%);   color:white;   border:0;}
+.sa-panel-MRv > .panel-heading{ background-color:darken($sa-MRv, 10%);   color:white;   border:0;}
 
-.panel-MRv > .panel-body{ background-color:lighten($sa-MRv, 0%); color:white; }
+.sa-panel-MRv > .panel-body{ background-color:lighten($sa-MRv, 0%); color:white; }
 
-.panel-MRv > .sa-panel-dots{ background-color:lighten($sa-MRv, 0%); }
+.sa-panel-MRv > .sa-panel-dots{ background-color:lighten($sa-MRv, 0%); }
 
-.panel-MRv > .panel-footer{ background-color:darken($sa-MRv, 20%);   color:white;   border:0;}
+.sa-panel-MRv > .panel-footer{ background-color:darken($sa-MRv, 20%);   color:white;   border:0;}
 
 // Panel Nurse Revalidation ----------------------------------------------------------------------
 
-.panel-NRv{ border:none; }
+.sa-panel-NRv{ border:none; }
 
-.panel-NRv > .panel-heading{ background-color:darken($sa-NRv, 10%);   color:white;   border:0;}
+.sa-panel-NRv > .panel-heading{ background-color:darken($sa-NRv, 10%);   color:white;   border:0;}
 
-.panel-NRv > .panel-body{ background-color:lighten($sa-NRv, 0%); color:white; }
+.sa-panel-NRv > .panel-body{ background-color:lighten($sa-NRv, 0%); color:white; }
 
-.panel-NRv > .sa-panel-dots{ background-color:lighten($sa-NRv, 0%); }
+.sa-panel-NRv > .sa-panel-dots{ background-color:lighten($sa-NRv, 0%); }
 
-.panel-NRv > .panel-footer{ background-color:darken($sa-NRv, 20%);   color:white;   border:0;}
+.sa-panel-NRv > .panel-footer{ background-color:darken($sa-NRv, 20%);   color:white;   border:0;}
 
 // Panel 360 ----------------------------------------------------------------------
 
-.panel-360{ border:none; }
+.sa-panel-360{ border:none; }
 
-.panel-360 > .panel-heading{ background-color:darken($sa-360, 10%);   color:white;   border:0;}
+.sa-panel-360 > .panel-heading{ background-color:darken($sa-360, 10%);   color:white;   border:0;}
 
-.panel-360 > .panel-body{ background-color:lighten($sa-360, 0%); color:white; }
+.sa-panel-360 > .panel-body{ background-color:lighten($sa-360, 0%); color:white; }
 
-.panel-360 > .sa-panel-dots{ background-color:lighten($sa-360, 0%); }
+.sa-panel-360 > .sa-panel-dots{ background-color:lighten($sa-360, 0%); }
 
-.panel-360 > .panel-footer{ background-color:darken($sa-360, 20%);   color:white;   border:0;}
+.sa-panel-360 > .panel-footer{ background-color:darken($sa-360, 20%);   color:white;   border:0;}
 
 // Panel eLeave ----------------------------------------------------------------------
 
-.panel-eLeave{ border:none; }
+.sa-panel-eLeave{ border:none; }
 
-.panel-eLeave > .panel-heading{ background-color:darken($sa-eLeave, 10%);   color:white;   border:0;}
+.sa-panel-eLeave > .panel-heading{ background-color:darken($sa-eLeave, 10%);   color:white;   border:0;}
 
-.panel-eLeave > .panel-body{ background-color:lighten($sa-eLeave, 0%); color:white; }
+.sa-panel-eLeave > .panel-body{ background-color:lighten($sa-eLeave, 0%); color:white; }
 
-.panel-eLeave > .sa-panel-dots{ background-color:lighten($sa-eLeave, 0%); }
+.sa-panel-eLeave > .sa-panel-dots{ background-color:lighten($sa-eLeave, 0%); }
 
-.panel-eLeave > .panel-footer{ background-color:darken($sa-eLeave, 20%);   color:white;   border:0;}
+.sa-panel-eLeave > .panel-footer{ background-color:darken($sa-eLeave, 20%);   color:white;   border:0;}
 
 // Panel Appraisal for All ----------------------------------------------------------------------
 
-.panel-A4A{ border:none; }
+.sa-panel-A4A{ border:none; }
 
-.panel-A4A > .panel-heading{ background-color:darken($sa-A4A, 10%);   color:white;   border:0;}
+.sa-panel-A4A > .panel-heading{ background-color:darken($sa-A4A, 10%);   color:white;   border:0;}
 
-.panel-A4A > .panel-body{ background-color:lighten($sa-A4A, 0%); color:white; }
+.sa-panel-A4A > .panel-body{ background-color:lighten($sa-A4A, 0%); color:white; }
 
-.panel-A4A > .sa-panel-dots{ background-color:lighten($sa-A4A, 0%); }
+.sa-panel-A4A > .sa-panel-dots{ background-color:lighten($sa-A4A, 0%); }
 
-.panel-A4A > .panel-footer{ background-color:darken($sa-A4A, 20%);   color:white;   border:0;}
+.sa-panel-A4A > .panel-footer{ background-color:darken($sa-A4A, 20%);   color:white;   border:0;}
 
 // Panel Job Planning ----------------------------------------------------------------------
 
-.panel-JPL{ border:none; }
+.sa-panel-JPL{ border:none; }
 
-.panel-JPL > .panel-heading{ background-color:darken($sa-JPL, 10%);   color:white;   border:0;}
+.sa-panel-JPL > .panel-heading{ background-color:darken($sa-JPL, 10%);   color:white;   border:0;}
 
-.panel-JPL > .panel-body{ background-color:lighten($sa-JPL, 0%); color:white; }
+.sa-panel-JPL > .panel-body{ background-color:lighten($sa-JPL, 0%); color:white; }
 
-.panel-JPL > .sa-panel-dots{ background-color:lighten($sa-JPL, 0%); }
+.sa-panel-JPL > .sa-panel-dots{ background-color:lighten($sa-JPL, 0%); }
 
-.panel-JPL > .panel-footer{ background-color:darken($sa-JPL, 20%);   color:white;   border:0;}
+.sa-panel-JPL > .panel-footer{ background-color:darken($sa-JPL, 20%);   color:white;   border:0;}
 
 // Panel eRostering ----------------------------------------------------------------------
 
-.panel-eRo{ border:none; }
+.sa-panel-eRo{ border:none; }
 
-.panel-eRo > .panel-heading{ background-color:darken($sa-eRo, 5%);   color:white;   border:0;}
+.sa-panel-eRo > .panel-heading{ background-color:darken($sa-eRo, 5%);   color:white;   border:0;}
 
-.panel-eRo > .panel-body{ background-color:lighten($sa-eRo, 0%); color:white; }
+.sa-panel-eRo > .panel-body{ background-color:lighten($sa-eRo, 0%); color:white; }
 
-.panel-eRo > .sa-panel-dots{ background-color:lighten($sa-eRo, 0%); }
+.sa-panel-eRo > .sa-panel-dots{ background-color:lighten($sa-eRo, 0%); }
 
-.panel-eRo > .panel-footer{ background-color:darken($sa-eRo, 10%);   color:white;   border:0;}
+.sa-panel-eRo > .panel-footer{ background-color:darken($sa-eRo, 10%);   color:white;   border:0;}
 
 // Panel Capacity Planning ----------------------------------------------------------------------
 
-.panel-CPL{ border:none; }
+.sa-panel-CPL{ border:none; }
 
-.panel-CPL > .panel-heading{ background-color:darken($sa-CPL, 10%);   color:white;   border:0;}
+.sa-panel-CPL > .panel-heading{ background-color:darken($sa-CPL, 10%);   color:white;   border:0;}
 
-.panel-CPL > .panel-body{ background-color:lighten($sa-CPL, 0%); color:white; }
+.sa-panel-CPL > .panel-body{ background-color:lighten($sa-CPL, 0%); color:white; }
 
-.panel-CPL > .sa-panel-dots{ background-color:lighten($sa-CPL, 0%); }
+.sa-panel-CPL > .sa-panel-dots{ background-color:lighten($sa-CPL, 0%); }
 
-.panel-CPL > .panel-footer{ background-color:darken($sa-CPL, 20%);   color:white;   border:0;}
+.sa-panel-CPL > .panel-footer{ background-color:darken($sa-CPL, 20%);   color:white;   border:0;}
 
 // Other panels ====================================================================
 // =========================================================================================
 
 // Panel Dark ----------------------------------------------------------------------
 
-.panel-dark{ border:none; }
+.sa-panel-dark{ border:none; }
 
-.panel-dark > .panel-heading{ background-color:$grey14; color:white; border:0;}
+.sa-panel-dark > .panel-heading{ background-color:$grey14; color:white; border:0;}
 
-.panel-dark > .panel-body{ background-color:$grey08; }
+.sa-panel-dark > .panel-body{ background-color:$grey08; }
 
-.panel-dark > .sa-panel-dots{ background-color:$grey08; }
+.sa-panel-dark > .sa-panel-dots{ background-color:$grey08; }
 
-.panel-dark > .panel-footer{ background-color:$grey16;  color: white; border:0;}
+.sa-panel-dark > .panel-footer{ background-color:$grey16;  color: white; border:0;}
 
 // Panel Inverted ----------------------------------------------------------------------
 
-.panel-inverted{ border:none; }
+.sa-panel-inverted{ border:none; }
 
-.panel-inverted > .panel-heading{ background-color:$grey18; color:white; border:0;}
+.sa-panel-inverted > .panel-heading{ background-color:$grey18; color:white; border:0;}
 
-.panel-inverted > .panel-body{ background-color:$grey16;  color: white }
+.sa-panel-inverted > .panel-body{ background-color:$grey16;  color: white }
 
-.panel-inverted > .sa-panel-dots{ background-color:$grey16;  color: white }
+.sa-panel-inverted > .sa-panel-dots{ background-color:$grey16;  color: white }
 
-.panel-inverted > .panel-footer{ background-color:$grey18;  color: white; border:0;}
+.sa-panel-inverted > .panel-footer{ background-color:$grey18;  color: white; border:0;}
 
 // Panel White ----------------------------------------------------------------------
 
-.panel-white{ border:none; background-color:white; box-shadow:none; }
+.sa-panel-white{ border:none; background-color:white; box-shadow:none; }
 
-.panel-white > .panel-heading{ color:$grey18; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
+.sa-panel-white > .panel-heading{ color:$grey18; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
 
-.panel-white > .panel-body{ color: $grey18 }
+.sa-panel-white > .panel-body{ color: $grey18 }
 
-.panel-white > .sa-panel-dots-grey{ color: $grey18 }
+.sa-panel-white > .sa-panel-dots-grey{ color: $grey18 }
 
-.panel-white > .panel-footer{ background-color:white;  color: $grey18; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
+.sa-panel-white > .panel-footer{ background-color:white;  color: $grey18; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
 
 // END Panels ===============================================================================
 
@@ -469,56 +469,56 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   a:hover, a:focus{ color: darken($danger, 50%);}
 }
 
-.alert-MRv{
+.sa-alert-MRv{
   background-color:$sa-MRv;
   border:none;
   a:link{ color: darken($sa-MRv, 20%);}
   a:hover, a:focus{ color: darken($sa-MRv, 40%);}
 }
 
-.alert-NRv{
+.sa-alert-NRv{
   background-color:$sa-NRv;
   border:none;
   a:link{ color: darken($sa-NRv, 25%);}
   a:hover, a:focus{ color: darken($sa-NRv, 40%);}
 }
 
-.alert-360{
+.sa-alert-360{
   background-color:$sa-360;
   border:none;
   a:link{ color: darken($sa-360, 30%);}
   a:hover, a:focus{ color: darken($sa-360, 40%);}
 }
 
-.alert-eLeave{
+.sa-alert-eLeave{
   background-color:$sa-eLeave;
   border:none;
   a:link{ color: darken($sa-eLeave, 30%);}
   a:hover, a:focus{ color: darken($sa-eLeave, 50%);}
 }
 
-.alert-A4A{
+.sa-alert-A4A{
   background-color:$sa-A4A;
   border:none;
   a:link{ color: darken($sa-A4A, 20%);}
   a:hover, a:focus{ color: darken($sa-A4A, 60%);}
 }
 
-.alert-JPL{
+.sa-alert-JPL{
   background-color:$sa-JPL;
   border:none;
   a:link{ color: darken($sa-JPL, 20%);}
   a:hover, a:focus{ color: darken($sa-JPL, 40%);}
 }
 
-.alert-eRo{
+.sa-alert-eRo{
   background-color:$sa-eRo;
   border:none;
   a:link{ color: lighten($sa-eRo, 20%);}
   a:hover, a:focus{ color: darken($sa-eRo, 10%);}
 }
 
-.alert-CPL{
+.sa-alert-CPL{
   background-color:$sa-CPL;
   border:none;
   a:link{ color: darken($sa-CPL, 20%);}
