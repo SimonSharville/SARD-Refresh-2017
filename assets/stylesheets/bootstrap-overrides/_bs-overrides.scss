@@ -400,29 +400,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .panel-body{ }
 
-.sa-perf-wht{
-    background-image: url("../graphics/dot_white.png");
-    background-repeat: repeat-x;
-    height: 16px;
-    background-position: -4px 0px;
-    margin: 0px 0px 0px 0px;
-  }
-.panel{
-  >.sa-perf-wht{
-    background-image: url("../graphics/dot_white.png");
-    background-repeat: repeat-x;
-    height: 16px;
-    background-position: -4px 0px;
-    margin: 0px 0px 0px 0px;
-  }
-  >.sa-perf-grey{
-    background-image: url("../graphics/dot_grey04.png");
-    background-repeat: repeat-x;
-    height: 16px;
-    background-position: -4px 0px;
-    margin: 0px 0px 0px 0px;
-  }
-}
+
+
 
 
 .panel-footer{ 
