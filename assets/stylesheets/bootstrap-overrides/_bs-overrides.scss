@@ -176,6 +176,209 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // END Navbar Default --------------------------------------------------
 
+// Nav Tabs ============================================================
+// These are taken from bootstrap-example-code.css and amended
+// Because of the way Bootsrap is written I had to include all code for each component.
+
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid $grey04;
+  border-radius: 0px 0px 0 0;
+  background-color: $grey02;
+  color: $grey14;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: $grey04 $grey04 $grey08;
+  background-color: $grey06;
+  color: $grey16;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: $grey18;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+
+.nav-tabs.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 0px 0px 0 0;
+  margin-bottom: 0px;
+  // -moz-box-shadow: inset      0 -20px 20px -20px $grey12;
+  //   -webkit-box-shadow: inset 0 -20px 20px -20px $grey12;
+  //   box-shadow: inset         0 -20px 20px -20px $grey12;
+
+}
+
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+  // -moz-box-shadow: inset      none;
+  //   -webkit-box-shadow:       none;
+  //   box-shadow: inset         none;
+
+}
+
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid $grey04; // Amended
+    border-radius: 0px 0px 0 0; // Amended
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #ffffff;
+  }
+}
+
+.nav-pills > li {
+  float: left;
+}
+
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #337ab7;
+}
+
+.nav-stacked > li {
+  float: none;
+}
+
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+.nav-justified {
+  width: 100%;
+}
+
+.nav-justified > li {
+  float: none;
+}
+
+.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+@media (min-width: 768px) {
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .nav-tabs-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus {
+    border-bottom-color: #ffffff;
+  }
+}
+
+.tab-content > .tab-pane {
+  display: none;
+  padding:15px; // Amended
+  border-right :1px solid $grey04;
+  border-bottom :1px solid $grey04;
+  border-left :1px solid $grey04;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+
+
+// END Nav Tabs --------------------------------------------------------
 
 // Panels ===============================================================================
 
@@ -183,6 +386,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-radius:0px;
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   background-color:$panelBaseGrey;
+  border:none;
 }
 
 .panel-heading{
@@ -196,21 +400,30 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .panel-body{ }
 
-.sa-panel-dots{
-    background-image: url("..//graphics/dot_white.png");
+.sa-perf-wht{
+    background-image: url("../graphics/dot_white.png");
     background-repeat: repeat-x;
     height: 16px;
     background-position: -4px 0px;
     margin: 0px 0px 0px 0px;
   }
+.panel{
+  >.sa-perf-wht{
+    background-image: url("../graphics/dot_white.png");
+    background-repeat: repeat-x;
+    height: 16px;
+    background-position: -4px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  >.sa-perf-grey{
+    background-image: url("../graphics/dot_grey04.png");
+    background-repeat: repeat-x;
+    height: 16px;
+    background-position: -4px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 
-  .sa-panel-dots-grey{
-    background-image: url("..//graphics/dot_grey04.png");
-    background-repeat: repeat-x;
-    height: 16px;
-    background-position: -4px 0px;
-    margin: 0px 0px 0px 0px;
-  }
 
 .panel-footer{ 
   border-radius:0px; 
@@ -222,73 +435,79 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Panel Default ----------------------------------------------------------------------
 
-.panel-default{ border:none; }
+.panel-default{  }
 
 .panel-default > .panel-heading{ background-color:$grey08; border:0; }
 
 .panel-default > .panel-body{ background-color:$panelBaseGrey; }
 
-.panel-default > .sa-panel-dots{ background-color:$panelBaseGrey; }
+.panel-default > .sa-perf-wht{ background-color:$panelBaseGrey; }
+.panel-default > .sa-perf-grey{ background-color:$panelBaseGrey; }
 
 .panel-default > .panel-footer{ background-color:$grey12;   color: white;   border:0;}
 
 // Panel Primary ----------------------------------------------------------------------
 
-.panel-primary{ border:none; }
+.panel-primary{  }
 
 .panel-primary > .panel-heading{ background-color:darken($turq, 10%);   color:white;   border:0;}
 
 .panel-primary > .panel-body{ background-color:lighten($turq, 0%); }
 
-.panel-primary > .sa-panel-dots{ background-color:lighten($turq, 0%); }
+.panel-primary > .sa-perf-wht{ background-color:lighten($turq, 0%); }
+.panel-primary > .sa-perf-grey{ background-color:lighten($turq, 0%); }
 
 .panel-primary > .panel-footer{ background-color:darken($turq, 20%);   color: white;   border:0;}
 
 // Panel Success ---------------------------------------------------------------------
 
-.panel-success{ border:none; }
+.panel-success{  }
 
 .panel-success > .panel-heading{ background-color:darken($success, 10%);   color:white;   border:0;}
 
 .panel-success > .panel-body{ background-color:lighten($success, 10%); }
 
-.panel-success > .sa-panel-dots{ background-color:lighten($success, 10%); }
+.panel-success > .sa-perf-wht{ background-color:lighten($success, 10%); }
+.panel-success > .sa-perf-grey{ background-color:lighten($success, 10%); }
 
 .panel-success > .panel-footer{ background-color:darken($success, 20%);   color: white;   border:0;}
 
 // Panel Info ---------------------------------------------------------------------
 
-.panel-info{ border:none; }
+.panel-info{  }
 
 .panel-info > .panel-heading{ background-color:darken($info, 10%);   color:white;   border:0;}
 
 .panel-info > .panel-body{ background-color:lighten($info, 0%); }
 
-.panel-info > .sa-panel-dots{ background-color:lighten($info, 0%); }
+.panel-info > .sa-perf-wht{ background-color:lighten($info, 0%); }
+.panel-info > .sa-perf-grey{ background-color:lighten($info, 0%); }
 
 .panel-info > .panel-footer{ background-color:darken($info, 20%);   color: white;   border:0;}
 
 // Panel Warning ---------------------------------------------------------------------
 
-.panel-warning{ border:none; }
+.panel-warning{  }
 
 .panel-warning > .panel-heading{ background-color:black;   color:$warning;   border:0;}
 
 .panel-warning > .panel-body{ background-color:lighten($warning, 0%); }
 
-.panel-warning > .sa-panel-dots{ background-color:lighten($warning, 0%); }
+.panel-warning > .sa-perf-wht{ background-color:lighten($warning, 0%); }
+.panel-warning > .sa-perf-grey{ background-color:lighten($warning, 0%); }
 
 .panel-warning > .panel-footer{ background-color:black;   color:$warning;   border:0;}
 
 // Panel Danger ---------------------------------------------------------------------
 
-.panel-danger{ border:none; }
+.panel-danger{  }
 
 .panel-danger > .panel-heading{ background-color:black;   color:$danger;   border:0;}
 
 .panel-danger > .panel-body{ background-color:lighten($danger, 0%); }
 
-.panel-danger > .sa-panel-dots{ background-color:lighten($danger, 0%); }
+.panel-danger > .sa-perf-wht{ background-color:lighten($danger, 0%); }
+.panel-danger > .sa-perf-grey{ background-color:lighten($danger, 0%); }
 
 .panel-danger > .panel-footer{ background-color:black;   color:$danger;   border:0;}
 
@@ -297,97 +516,105 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Panel Medical Revalidation ----------------------------------------------------------------------
 
-.sa-panel-MRv{ border:none; }
+.sa-panel-MRv{  }
 
 .sa-panel-MRv > .panel-heading{ background-color:darken($sa-MRv, 10%);   color:white;   border:0;}
 
 .sa-panel-MRv > .panel-body{ background-color:lighten($sa-MRv, 0%); color:white; }
 
-.sa-panel-MRv > .sa-panel-dots{ background-color:lighten($sa-MRv, 0%); }
+.sa-panel-MRv > .sa-perf-wht{ background-color:lighten($sa-MRv, 0%); }
+.sa-panel-MRv > .sa-perf-grey{ background-color:lighten($sa-MRv, 0%); }
 
 .sa-panel-MRv > .panel-footer{ background-color:darken($sa-MRv, 20%);   color:white;   border:0;}
 
 // Panel Nurse Revalidation ----------------------------------------------------------------------
 
-.sa-panel-NRv{ border:none; }
+.sa-panel-NRv{  }
 
 .sa-panel-NRv > .panel-heading{ background-color:darken($sa-NRv, 10%);   color:white;   border:0;}
 
 .sa-panel-NRv > .panel-body{ background-color:lighten($sa-NRv, 0%); color:white; }
 
-.sa-panel-NRv > .sa-panel-dots{ background-color:lighten($sa-NRv, 0%); }
+.sa-panel-NRv > .sa-perf-wht{ background-color:lighten($sa-NRv, 0%); }
+.sa-panel-NRv > .sa-perf-grey{ background-color:lighten($sa-NRv, 0%); }
 
 .sa-panel-NRv > .panel-footer{ background-color:darken($sa-NRv, 20%);   color:white;   border:0;}
 
 // Panel 360 ----------------------------------------------------------------------
 
-.sa-panel-360{ border:none; }
+.sa-panel-360{  }
 
 .sa-panel-360 > .panel-heading{ background-color:darken($sa-360, 10%);   color:white;   border:0;}
 
 .sa-panel-360 > .panel-body{ background-color:lighten($sa-360, 0%); color:white; }
 
-.sa-panel-360 > .sa-panel-dots{ background-color:lighten($sa-360, 0%); }
+.sa-panel-360 > .sa-perf-wht{ background-color:lighten($sa-360, 0%); }
+.sa-panel-360 > .sa-perf-grey{ background-color:lighten($sa-360, 0%); }
 
 .sa-panel-360 > .panel-footer{ background-color:darken($sa-360, 20%);   color:white;   border:0;}
 
 // Panel eLeave ----------------------------------------------------------------------
 
-.sa-panel-eLeave{ border:none; }
+.sa-panel-eLeave{  }
 
 .sa-panel-eLeave > .panel-heading{ background-color:darken($sa-eLeave, 10%);   color:white;   border:0;}
 
 .sa-panel-eLeave > .panel-body{ background-color:lighten($sa-eLeave, 0%); color:white; }
 
-.sa-panel-eLeave > .sa-panel-dots{ background-color:lighten($sa-eLeave, 0%); }
+.sa-panel-eLeave > .sa-perf-wht{ background-color:lighten($sa-eLeave, 0%); }
+.sa-panel-eLeave > .sa-perf-grey{ background-color:lighten($sa-eLeave, 0%); }
 
 .sa-panel-eLeave > .panel-footer{ background-color:darken($sa-eLeave, 20%);   color:white;   border:0;}
 
 // Panel Appraisal for All ----------------------------------------------------------------------
 
-.sa-panel-A4A{ border:none; }
+.sa-panel-A4A{  }
 
 .sa-panel-A4A > .panel-heading{ background-color:darken($sa-A4A, 10%);   color:white;   border:0;}
 
 .sa-panel-A4A > .panel-body{ background-color:lighten($sa-A4A, 0%); color:white; }
 
-.sa-panel-A4A > .sa-panel-dots{ background-color:lighten($sa-A4A, 0%); }
+.sa-panel-A4A > .sa-perf-wht{ background-color:lighten($sa-A4A, 0%); }
+.sa-panel-A4A > .sa-perf-grey{ background-color:lighten($sa-A4A, 0%); }
 
 .sa-panel-A4A > .panel-footer{ background-color:darken($sa-A4A, 20%);   color:white;   border:0;}
 
 // Panel Job Planning ----------------------------------------------------------------------
 
-.sa-panel-JPL{ border:none; }
+.sa-panel-JPL{  }
 
 .sa-panel-JPL > .panel-heading{ background-color:darken($sa-JPL, 10%);   color:white;   border:0;}
 
 .sa-panel-JPL > .panel-body{ background-color:lighten($sa-JPL, 0%); color:white; }
 
-.sa-panel-JPL > .sa-panel-dots{ background-color:lighten($sa-JPL, 0%); }
+.sa-panel-JPL > .sa-perf-wht{ background-color:lighten($sa-JPL, 0%); }
+.sa-panel-JPL > .sa-perf-grey{ background-color:lighten($sa-JPL, 0%); }
 
 .sa-panel-JPL > .panel-footer{ background-color:darken($sa-JPL, 20%);   color:white;   border:0;}
 
 // Panel eRostering ----------------------------------------------------------------------
 
-.sa-panel-eRo{ border:none; }
+.sa-panel-eRo{  }
 
 .sa-panel-eRo > .panel-heading{ background-color:darken($sa-eRo, 5%);   color:white;   border:0;}
 
 .sa-panel-eRo > .panel-body{ background-color:lighten($sa-eRo, 0%); color:white; }
 
-.sa-panel-eRo > .sa-panel-dots{ background-color:lighten($sa-eRo, 0%); }
+.sa-panel-eRo > .sa-perf-wht{ background-color:lighten($sa-eRo, 0%); }
+.sa-panel-eRo > .sa-perf-grey{ background-color:lighten($sa-eRo, 0%); }
 
 .sa-panel-eRo > .panel-footer{ background-color:darken($sa-eRo, 10%);   color:white;   border:0;}
 
 // Panel Capacity Planning ----------------------------------------------------------------------
 
-.sa-panel-CPL{ border:none; }
+.sa-panel-CPL{  }
 
 .sa-panel-CPL > .panel-heading{ background-color:darken($sa-CPL, 10%);   color:white;   border:0;}
 
 .sa-panel-CPL > .panel-body{ background-color:lighten($sa-CPL, 0%); color:white; }
 
-.sa-panel-CPL > .sa-panel-dots{ background-color:lighten($sa-CPL, 0%); }
+.sa-panel-CPL > .sa-perf-wht{ background-color:lighten($sa-CPL, 0%); }
+.sa-panel-CPL > .sa-perf-grey{ background-color:lighten($sa-CPL, 0%); }
 
 .sa-panel-CPL > .panel-footer{ background-color:darken($sa-CPL, 20%);   color:white;   border:0;}
 
@@ -396,37 +623,40 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Panel Dark ----------------------------------------------------------------------
 
-.sa-panel-dark{ border:none; }
+.sa-panel-dark{  }
 
 .sa-panel-dark > .panel-heading{ background-color:$grey14; color:white; border:0;}
 
 .sa-panel-dark > .panel-body{ background-color:$grey08; }
 
-.sa-panel-dark > .sa-panel-dots{ background-color:$grey08; }
+.sa-panel-dark > .sa-perf-wht{ background-color:$grey08; }
+.sa-panel-dark > .sa-perf-grey{ background-color:$grey08; }
 
 .sa-panel-dark > .panel-footer{ background-color:$grey16;  color: white; border:0;}
 
 // Panel Inverted ----------------------------------------------------------------------
 
-.sa-panel-inverted{ border:none; }
+.sa-panel-inverted{  }
 
 .sa-panel-inverted > .panel-heading{ background-color:$grey18; color:white; border:0;}
 
 .sa-panel-inverted > .panel-body{ background-color:$grey16;  color: white }
 
-.sa-panel-inverted > .sa-panel-dots{ background-color:$grey16;  color: white }
+.sa-panel-inverted > .sa-perf-wht{ background-color:$grey16; }
+.sa-panel-inverted > .sa-perf-grey{ background-color:$grey16; }
 
 .sa-panel-inverted > .panel-footer{ background-color:$grey18;  color: white; border:0;}
 
 // Panel White ----------------------------------------------------------------------
 
-.sa-panel-white{ border:none; background-color:white; box-shadow:none; }
+.sa-panel-white{  background-color:white; box-shadow:none; }
 
 .sa-panel-white > .panel-heading{ color:$grey18; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
 
 .sa-panel-white > .panel-body{ color: $grey18 }
 
-.sa-panel-white > .sa-panel-dots-grey{ color: $grey18 }
+.sa-panel-white > .sa-perf-wht{ background-color: white }
+.sa-panel-white > .sa-perf-grey{ background-color: white }
 
 .sa-panel-white > .panel-footer{ background-color:white;  color: $grey18; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
 
@@ -528,5 +758,116 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 // END Alerts ===============================================================================
 
 // Buttons ===============================================================================
+
+// Global button styles
+.btn{
+    background-image: url("..//graphics/panel_highlight.png");
+    background-repeat: no-repeat;
+    background-size: 50% ;
+    border:0px;
+    letter-spacing:$single;
+    background-color: inherit;
+    // color:white;
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    text-decoration:none;
+  }
+
+  // Button Shadows
+  .btn {
+    -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+  // .btn:hover{ color:white;}
+  //   .btn:visited{ color:white;}
+
+  .btn:active, .btn.active {
+    background-image: url("../graphics/panel_highlight.png");
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+    // color:white;
+  }
+
+
+  .shadow{
+    -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .input-group{
+  .btn{
+    box-shadow: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+// This removes the glow that appears on imput buttons when clicked.
+  textarea:hover,
+  textarea:active,
+  textarea:focus,
+  button:focus,
+  button:active,
+  button:hover
+  {
+      outline:0px !important;
+      -webkit-appearance:none;
+  }
+
+// Bootstrap Specific Button Styles
+
+.btn-default { background-color: darken($grey14, 10%); color:white!important;}
+.btn-default:visited { background-color: darken($grey14, 10%); color:white!important;}
+.btn-default:hover { background-color: darken($grey14, 20%); color:white!important;}
+.btn-default:active,  { background-color: darken($grey14, 20%)!important;}
+.btn-default:focus { background-color: darken($grey14, 20%)!important;}
+
+.btn-primary { background-color: darken($teal, 5%); color:white!important;}
+.btn-primary:visited { background-color: darken($teal, 5%); color:white!important;}
+.btn-primary:hover { background-color: darken($teal, 10%); color:white!important;}
+.btn-primary:active,  { background-color: darken($teal, 20%)!important;}
+.btn-primary:focus { background-color: darken($teal, 20%)!important;}
+
+.btn-success { background-color: darken($success, 30%); color:white!important;}
+.btn-success:visited { background-color: darken($success, 30%); color:white!important;}
+.btn-success:hover { background-color: darken($success, 40%); color:white!important;}
+.btn-success:active,  { background-color: darken($success, 40%)!important;}
+.btn-success:focus { background-color: darken($success, 40%)!important;}
+
+.btn-info { background-color: darken($blue, 10%); color:white!important;}
+.btn-info:visited { background-color: darken($blue, 10%); color:white!important;}
+.btn-info:hover { background-color: darken($ink, 10%); color:white!important;}
+.btn-info:active,  { background-color: darken($ink, 10%)!important;}
+.btn-info:focus { background-color: darken($ink, 10%)!important;}
+
+.btn-warning { background-color: darken(black, 10%); color:$yellow!important;}
+.btn-warning:visited { background-color: darken(black, 10%); color:$yellow!important;}
+.btn-warning:hover { background-color: darken(black, 20%); color:white!important;}
+.btn-warning:active,  { background-color: darken(black, 20%)!important;}
+.btn-warning:focus { background-color: darken(black, 20%)!important;}
+
+.btn-danger { background-color: darken(black, 10%); color:$red!important;}
+.btn-danger:visited { background-color: darken(black, 10%); color:$red!important;}
+.btn-danger:hover { background-color: darken(black, 20%); color:white!important;}
+.btn-danger:active,  { background-color: darken(black, 20%)!important;}
+.btn-danger:focus { background-color: darken(black, 20%)!important;}
+
+.btn-link{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+   &.btn:active, .btn.active {
+    background-image: none;
+    box-shadow: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-decoration:none!important;
+    background-color: none;
+  }
+}
+
 
 // END Buttons ===============================================================================
