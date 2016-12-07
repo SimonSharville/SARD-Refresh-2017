@@ -785,9 +785,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .btn:active, .btn.active {
     background-image: url("../graphics/panel_highlight.png");
     box-shadow: none;
+    top: 3px;
+  }
+
+  .panel {  // This makes them work properly within a panel
+    .btn:active, .btn:active{
     margin-bottom: -3px;
     margin-top: 3px;
-    // color:white;
+    }
   }
 
 
