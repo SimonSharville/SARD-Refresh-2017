@@ -749,7 +749,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     // color:white;
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
     text-decoration:none;
+    margin-right:3px;
   }
+
+  .btn:last-of-type { margin-right:0px; }
 
   // Button Shadows
   .btn {
@@ -768,9 +771,16 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   }
 
   .panel {  // This makes them work properly within a panel
+    .btn{ margin-top:6px; margin-bottom:6px;}
+    // .btn:first-of-type{margin-top:0px;}
+
     .btn:active, .btn:active{
-    margin-bottom: -3px;
-    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-top: 9px;
+    }
+    .btn:active:first-of-type, .btn:active:first-of-type{
+    // margin-bottom: -3px;
+    // margin-top: 3px;
     }
   }
 
@@ -803,11 +813,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Bootstrap Specific Button Styles
 
-.btn-default { background-color: darken($grey14, 10%); color:white!important;}
-.btn-default:visited { background-color: darken($grey14, 10%); color:white!important;}
-.btn-default:hover { background-color: darken($grey14, 20%); color:white!important;}
-.btn-default:active,  { background-color: darken($grey14, 20%)!important;}
-.btn-default:focus { background-color: darken($grey14, 20%)!important;}
+.btn-default { background-color: darken($turq, 10%); color:white!important;}
+.btn-default:visited { background-color: darken($turq, 10%); color:white!important;}
+.btn-default:hover { background-color: darken($turq, 20%); color:white!important;}
+.btn-default:active,  { background-color: darken($turq, 20%)!important;}
+.btn-default:focus { background-color: darken($turq, 20%)!important;}
 
 .btn-primary { background-color: darken($teal, 5%); color:white!important;}
 .btn-primary:visited { background-color: darken($teal, 5%); color:white!important;}

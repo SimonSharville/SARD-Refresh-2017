@@ -168,6 +168,14 @@ body {
   padding-left: 8px;
   padding-right: 8px; }
 
+.side {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+@media only screen and (min-width: 992px) {
+  .mobile-only {
+    display: none; } }
+
 .row-indent {
   padding-left: 15px;
   padding-right: 15px; }
@@ -181,6 +189,14 @@ body {
   background-color: #00B2B2;
   padding-left: 20px;
   padding-right: 20px; }
+
+.popover-title {
+  color: blue;
+  font-size: 15px; }
+
+.popover-content {
+  color: red;
+  font-size: 14px; }
 
 .page-header {
   margin-top: 0px;
@@ -935,7 +951,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   letter-spacing: 0.0625em;
   background-color: inherit;
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-right: 3px; }
+
+.btn:last-of-type {
+  margin-right: 0px; }
 
 .btn {
   -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
@@ -947,9 +967,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   box-shadow: none;
   top: 3px; }
 
+.panel .btn {
+  margin-top: 6px;
+  margin-bottom: 6px; }
+
 .panel .btn:active, .panel .btn:active {
-  margin-bottom: -3px;
-  margin-top: 3px; }
+  margin-bottom: 3px;
+  margin-top: 9px; }
 
 .shadow {
   -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
@@ -971,22 +995,22 @@ button:hover {
   -webkit-appearance: none; }
 
 .btn-default {
-  background-color: #474543;
+  background-color: #007f7f;
   color: white !important; }
 
 .btn-default:visited {
-  background-color: #474543;
+  background-color: #007f7f;
   color: white !important; }
 
 .btn-default:hover {
-  background-color: #2d2b2a;
+  background-color: #004c4c;
   color: white !important; }
 
 .btn-default:active {
-  background-color: #2d2b2a !important; }
+  background-color: #004c4c !important; }
 
 .btn-default:focus {
-  background-color: #2d2b2a !important; }
+  background-color: #004c4c !important; }
 
 .btn-primary {
   background-color: #003434;
@@ -1497,6 +1521,23 @@ button:hover {
   padding-left: 115px; }
 
 #sa-ui-kop .page-header .sa-page-title {
+  font-family: 'robotothin';
+  font-size: 60px;
+  line-height: 50px; }
+
+#dashboard .page-header .sa-profile-image {
+  padding-right: 10px; }
+
+#dashboard .page-header .sa-profile-image img {
+  border-radius: 50%; }
+
+#dashboard .page-header .sa-user-name {
+  font-size: 20px;
+  font-family: 'robotobold';
+  padding-top: 10px;
+  padding-left: 115px; }
+
+#dashboard .page-header .sa-page-title {
   font-family: 'robotothin';
   font-size: 60px;
   line-height: 50px; }
