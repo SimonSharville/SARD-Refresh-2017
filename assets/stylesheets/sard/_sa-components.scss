@@ -84,6 +84,10 @@
 
 //  Perforation dots ==============================================================
 
+.divide-rule{
+  border-top: 1px solid $grey08;
+  margin:20px 10px 20px 10px;
+}
   .row{
     &.sa-perf {
       background-image: url("../graphics/dot_grey08.png");
