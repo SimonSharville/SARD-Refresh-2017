@@ -33,12 +33,9 @@
 
 // SARD Incidentals =================================================================
 
-.main{ }
+.sa-main{ } // If creating a 2 column layout like dashboard use this.
 
-.side{ // this adjusts the side panel gutters on Dashboard page
-  padding-left: 0px;
-  padding-right: 0px;
-}
+.sa-side{ } // If creating a 2 column layout like dashboard use this.
 
 .indent{
   padding-left:15px;

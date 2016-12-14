@@ -1155,6 +1155,52 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Tooltips & Popovers ==========================================================================
 
+.tooltip{
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: $vslight;
+}
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.tooltip-inner {
+  background-color: darken($info, 10%);
+}
+
+.tooltip.top .tooltip-arrow{
+  border-top-color: darken($info, 10%);
+}
+
+.tooltip.top-left .tooltip-arrow{
+  border-top-color: darken($info, 10%);
+}
+
+.tooltip.top-right .tooltip-arrow{
+  border-top-color: darken($info, 10%);
+}
+
+.tooltip.right .tooltip-arrow{
+  border-right-color: darken($info, 10%);
+}
+
+.tooltip.left .tooltip-arrow{
+  border-left-color: darken($info, 10%);
+}
+
+.tooltip.bottom .tooltip-arrow{
+  border-bottom-color: darken($info, 10%);
+}
+
+.tooltip.bottom-left .tooltip-arrow{
+  border-bottom-color: darken($info, 10%);
+}
+
+.tooltip.bottom-right .tooltip-arrow{
+  border-bottom-color: darken($info, 10%);
+}
+
 .popover{
   max-width: 500px;
   background-color: lighten($info, 5%);
