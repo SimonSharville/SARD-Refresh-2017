@@ -25,11 +25,13 @@ html {
 body {
   margin: 0;
   background-color: $sa-background; 
+  color: $bodytext;
 }
 
 
 
-
+// =============================================================================================================
+// SARD STRUCTURE TWEAKS
 // ===============================================
 // This reduces the gutter to 16px instead of 30px
 
@@ -49,45 +51,10 @@ body {
   padding-right: 8px;
 }
 
-.main{ }
-
-.side{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-// ===============================================
-
-@media only screen and (min-width : 992px) {
-  .mobile-only{display:none}
-}
-
-.row-indent{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.row-grey{ 
-  background-color:$grey02;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.row-turq{ 
-  background-color:$turq;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+// Incedentals ===================================
 
 
-.popover-title {
-    color: blue;
-    font-size: 15px;
-}
-.popover-content {
-    color: red;
-    font-size: 14px;
-}
+
 
 
 

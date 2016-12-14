@@ -9,11 +9,19 @@
   //letter-spacing
     $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
     $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
+    $vslight: 0.025em; 
     $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
     $single: 0.0625em; /* 16 * 0.0625 = 1px */
     $double: 0.125em; /* 16 * 0.125 = 2px */
   
-  
+  // Colours
+    $bodytext:         $grey18;
+    $link:             $grey18;
+    $link-visited:     $plum;
+    $link-hover:       darken($turq, 10%);
+    $link-active:      $purple;
+    
+
 
   
   h1 {
@@ -77,4 +85,15 @@
       // outline-offset: -2px; 
     }
 
+  .panel {
+    a:hover, a:focus, .glyphicon-info-sign{color: darken($info, 10%);}
+    a:link, .glyphicon-info-sign{color: darken($info, 20%);}
+  }
+  
+   .sa-notice, h5, p{
+    a:link{ color:$bodytext;}
+    a:visited{ color:$bodytext;}
+    a:hover{ color:$link-hover;}
+    a:active{ color:$link-hover;}
+  }
 
