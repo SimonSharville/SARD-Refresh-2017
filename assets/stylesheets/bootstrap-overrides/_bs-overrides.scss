@@ -416,14 +416,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .panel-default{  }
 
-.panel-default > .panel-heading{ background-color:$grey08; border:0; }
+.panel-default > .panel-heading{ background-color:darken($panelBaseGrey, 20%); border:0; }
 
 .panel-default > .panel-body{ background-color:$panelBaseGrey; }
 
 .panel-default > .sa-perf-wht{ background-color:$panelBaseGrey; }
 .panel-default > .sa-perf-grey{ background-color:$panelBaseGrey; }
 
-.panel-default > .panel-footer{ background-color:$grey12;   color: white;   border:0;}
+.panel-default > .panel-footer{ background-color:darken($panelBaseGrey, 20%);   color: white;   border:0;}
 
 // Panel Primary ----------------------------------------------------------------------
 
@@ -1150,4 +1150,33 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .table-hover > tbody > tr:hover {background-color: darken($danger, 5%);}
 }
 
+
+// END Tables ===================================================================================
+
+// Tooltips & Popovers ==========================================================================
+
+.popover{
+  max-width: 500px;
+  background-color: lighten($info, 5%);
+  // padding:0px;
+}
+
+.popover-title{ 
+  background-color: darken($info, 10%);
+  color: black;
+  border-bottom: 0px solid darken($info, 10%);
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: $slight;
+}
+
+.popover-content{ 
+  color: black; 
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  letter-spacing: $vslight;
+}
+
+.popover.top > .arrow:after{ border-top-color: lighten($info, 5%)}
+.popover.right > .arrow:after{ border-right-color: lighten($info, 5%)}
+.popover.bottom > .arrow:after{ border-bottom-color: lighten($info, 5%)}
+.popover.left > .arrow:after{ border-left-color: lighten($info, 5%)}
 

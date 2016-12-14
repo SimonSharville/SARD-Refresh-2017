@@ -25,6 +25,7 @@ $sa-CPL:                $red;
 
 //  Greys ======================
 $grey02:                #EDEBEB;
+$grey03:                #E3E1E1;
 $grey04:                #D9D6D6;
 $grey06:                #C7C4C2;
 $grey08:                #B5B0B0;
@@ -40,7 +41,7 @@ $success:               #33cc33;
 $info:                  #00CCFF;
 $warning:               #FFCC00;
 $danger:                #FF0000;
-
+$alert:                 $pink;
 
 
 // Colour Mixins ===================
@@ -52,4 +53,4 @@ $sa-client-colour-very-light:     lighten($sa-client-colour, 10%);
 $sa-client-colour-dark:           darken($sa-client-colour, 10%);
 $sa-client-colour-very-dark:      darken($sa-client-colour, 20%);
 
-$panelBaseGrey:                   $grey04;
+$panelBaseGrey:                   $grey03;
