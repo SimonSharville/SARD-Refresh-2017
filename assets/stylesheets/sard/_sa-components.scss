@@ -31,12 +31,46 @@
 }
 
 
-// Incidentals =================================================================
-.sa-indent{
+// SARD Incidentals =================================================================
+
+.main{ }
+
+.side{ // this adjusts the side panel gutters on Dashboard page
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.indent{
   padding-left:15px;
   padding-right:15px;
 }
 
+.row-indent{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row-grey{ 
+  background-color:$grey02;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row-turq{ 
+  background-color:$turq;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Only display element on Mobile ==================
+@media only screen and (min-width : 992px) {
+  .mobile-only{display:none} 
+}
+
+// Hide element on Mobile ==========================
+@media only screen and (max-width : 991px) {
+  .mobile-hide{display:none} 
+}
 
 
 // Top Nav =====================================================================
@@ -158,8 +192,83 @@
 //  All panel styles are in _bs-overrides.scss
 //  =====================================================================
 
+//  Tables ==============================================================
+//  All tables styles are in _bs-overrides.scss
+//  =====================================================================
+
+
+// Status Lights ========================================================
+
+.status{}
+
+.status:before{
+    content: "" ;
+    display: inline-block;
+    border-radius:50%;
+    border: 2px solid white;
+    float:left;
+    background-image: url("../graphics/panel_highlight.png");
+  }
+.status:hover:before{
+  font-family: 'Glyphicons Halflings';
+  content: "\e080" ;
+  text-align:center;
+  color:white;
+}
+
+.status-alert:before{
+    background-color:$yellow;
+  }
+  .status-warning:before{
+    background-color:$orange;
+  }
+.status-complete:before{
+    background-color:$success;
+  }
+  .status-danger:before{
+    background-color:$danger;
+  }
+
+// END Status Lights ====================================================
+
+// Notice ===============================================================
+.sa-notice{
+  padding-top:1px;
+  margin-bottom:7px;
+  padding-bottom:8px;
+  border-bottom: 1px solid white;
+}
+.sa-notice:last-of-type{
+  border-bottom: none;
+  margin-bottom:-20px;
+}
+
+.sa-notice{ 
+  &.status:before{
+    height: 32px;
+    width: 32px;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+  }
+  &.status:hover:before{
+    padding-top:3px;
+  }
+
+  h5, p{
+    margin:0 0 0 40px;
+  }
+  p{ margin-bottom:-3px;}
+}
+
+// END Notice ========================================================
+
+
+
+
 
 //  UI Components ==============================================================
 //  These should only be need for use in the UI pages.
 
 .ui-btn{ margin-bottom:10px;}
+
+
