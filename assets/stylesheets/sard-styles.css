@@ -137,10 +137,13 @@ a:hover, a:focus {
   color: #000078;
   text-decoration: none; }
 
-.panel a:hover, .panel a:focus, .panel .glyphicon-info-sign {
-  color: #00a3cc; }
+a.glyphicon-info-sign {
+  color: #00a3cc;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid white; }
 
-.panel a:link, .panel .glyphicon-info-sign {
+a:hover, a:focus .glyphicon-info-sign {
   color: #007a99; }
 
 .sa-notice a:link, h5 a:link, p a:link {
@@ -154,6 +157,12 @@ a:hover, a:focus {
 
 .sa-notice a:active, h5 a:active, p a:active {
   color: #007f7f; }
+
+.sa-notice a.glyphicon-info-sign, h5 a.glyphicon-info-sign, p a.glyphicon-info-sign {
+  color: #00a3cc; }
+
+.sa-notice a:hover, .sa-notice a:focus .glyphicon-info-sign, h5 a:hover, h5 a:focus .glyphicon-info-sign, p a:hover, p a:focus .glyphicon-info-sign {
+  color: #007a99; }
 
 * {
   -webkit-font-smoothing: antialiased !important;
@@ -1362,6 +1371,41 @@ button:hover {
 .panel-danger .table-hover > tbody > tr:hover {
   background-color: #e60000; }
 
+.tooltip {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em; }
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+
+.tooltip-inner {
+  background-color: #00a3cc; }
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #00a3cc; }
+
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: #00a3cc; }
+
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: #00a3cc; }
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #00a3cc; }
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #00a3cc; }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #00a3cc; }
+
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #00a3cc; }
+
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #00a3cc; }
+
 .popover {
   max-width: 500px;
   background-color: #1ad1ff; }
@@ -1406,10 +1450,6 @@ button:hover {
 
 .sa-footer {
   margin-bottom: -10px; }
-
-.side {
-  padding-left: 0px;
-  padding-right: 0px; }
 
 .indent {
   padding-left: 15px;
