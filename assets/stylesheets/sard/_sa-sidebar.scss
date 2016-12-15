@@ -4,7 +4,7 @@
 
 // http://jsfiddle.net/waspinator/z92bxk0d/
 
-.sa-sidebar{
+.sidebar{
         z-index: 100;
         // background-color:red;
         position:relative;
@@ -19,7 +19,7 @@
 
   }
 
-.sa-sidebar-content {
+.sidebar-content {
     width:100%;
     height:0px;
     // margin-right: auto;
@@ -95,4 +95,4 @@
       }
     } // End Panel group
 
-} // End .sa-sidebar-content
+} // End .sidebar-content
