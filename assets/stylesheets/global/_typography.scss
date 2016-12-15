@@ -67,8 +67,12 @@
     font-size: 1.000em;
   }
 
-  
-
+  strong{ 
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    font-weight:normal;
+  }
+  .green { color:$green;}
+  .red { color:$red;}
 
 
 /*  TEXT LINK Styles ========================================================== */
@@ -77,10 +81,20 @@
   a {
     color: $turq;
     text-decoration: none; }
+
     a:hover, a:focus {
       color: $ink;
       text-decoration: none; }
-    a:focus {
+
+    a:focus { }
+
+    a:link{ color:$bodytext;}
+    a:visited{ color:$bodytext;}
+    a:hover{ color:$link-hover;}
+    a:active{ color:$link-hover;}
+    
+    .link-arrow { 
+      // See sard/pages/index.scss
     }
 
 
@@ -91,11 +105,75 @@
     border-radius:50%;
     border:1px solid white;
   }
+
   a:hover, a:focus .glyphicon-info-sign{
     color: darken($info, 20%);
   }
   
-   .sa-notice, h5, p{
+  // Status Lights ========================================================
+
+  .status{}
+
+  .status:before{
+      content: "" ;
+      display: inline-block;
+      border-radius:50%;
+      border: 2px solid white;
+      float:left;
+      background-image: url("../graphics/panel_highlight.png");
+    }
+  .status:hover:before{
+    font-family: 'Glyphicons Halflings';
+    content: "\e080" ;
+    text-align:center;
+    color:white;
+  }
+
+  .status-alert:before{
+    background-color:$yellow;
+  }
+  .status-warning:before{
+    background-color:$orange;
+  }
+.status-complete:before{
+    background-color:$success;
+  }
+  .status-danger:before{
+    background-color:$danger;
+  }
+
+  // END Status Lights ====================================================
+
+  // Notices ===============================================================
+  .notice{
+    padding-top:1px;
+    margin-bottom:7px;
+    padding-bottom:8px;
+    border-bottom: 1px solid white;
+  }
+  .notice:last-of-type{
+    border-bottom: none;
+    margin-bottom:-20px;
+  }
+
+  .notice{ 
+    &.status:before{
+      height: 32px;
+      width: 32px;
+      background-size: 28px 28px;
+      background-repeat: no-repeat;
+    }
+    &.status:hover:before{
+      padding-top:3px;
+    }
+
+    h5, h6, p{
+      margin:0 0 0 40px;
+    }
+    p{ margin-bottom:-3px;}
+  }
+
+   .notice, h5, p{
     a:link{ color:$bodytext;}
     a:visited{ color:$bodytext;}
     a:hover{ color:$link-hover;}
@@ -103,4 +181,57 @@
     a.glyphicon-info-sign{ color: darken($info, 10%); }
     a:hover, a:focus .glyphicon-info-sign{ color: darken($info, 20%);}
   }
+
+  // END Notice ========================================================
+
+  // List Groups ===============================================================
+
+  ul { // Removes bullet points globally
+    list-style-type: none;
+  }
+
+  .list-group{ // Used in Dashboard/Support Docs panel .doc-list
+    margin-bottom:0px;
+    .group{
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      border-bottom:1px solid $bodytext;
+      padding-bottom:5px;
+      margin-bottom:5px;
+      border-top:1px solid $bodytext;
+      padding-top:5px;
+      margin-top:5px;
+    }
+    .group:first-of-type{
+      border-top:none;
+      padding-top:0px;
+      margin-top:0px;
+    }
+    .grouped{
+      border-bottom:1px solid white;
+      padding-bottom:5px;
+      margin-bottom:5px;
+
+      a:link{ color:$bodytext;}
+      a:visited{ color:$bodytext;}
+      a:hover{ color:$link-hover;}
+      a:active{ color:$link-hover;}
+      a:link:before{
+        font-family: 'Glyphicons Halflings';
+        content: "\e131" ;
+        padding-right:5px;
+        vertical-align:middle;
+        color:$link-hover;
+      }
+      a:visited:before{color:$link-hover;}
+    }
+  }
+
+   a.link-arrow:before{ // Used on Dashboard/Your Details, email link
+    font-family: 'Glyphicons Halflings';
+        content: "\e131" ;
+        padding-right:5px;
+        vertical-align:middle;
+        color:$link-hover;
+  }
+
 

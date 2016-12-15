@@ -19,23 +19,26 @@
 
 .sa-footer-section{ }
 
-.sa-footer-content { 
-  background-color:$grey18;
-  color: $sa-client-colour;
-  height:40px;
-  padding-top: 10px;
-}
-
 .sa-footer{
   margin-bottom: -10px;
 }
+.sa-footer-content { 
+  background-color:$grey18;
+  color: $client-colour;
+  height:40px;
+  padding-top: 10px;
+  a{color:white;}
+}
+
+// .sa-footer-content a{color:white;}
+
+.sa-main-column{ } // If creating a 2 column layout like dashboard use this.
+
+.sa-side-column{ } // If creating a 2 column layout like dashboard use this.
 
 
 // SARD Incidentals =================================================================
 
-.sa-main{ } // If creating a 2 column layout like dashboard use this.
-
-.sa-side{ } // If creating a 2 column layout like dashboard use this.
 
 .indent{
   padding-left:15px;
@@ -103,7 +106,7 @@
     }
 
   }
-} // End sa-top-nav
+} // End top-nav
 
 
 // .navBot li  {
@@ -120,7 +123,7 @@
   margin:20px 10px 20px 10px;
 }
   .row{
-    &.sa-perf {
+    &.perf {
       background-image: url("../graphics/dot_grey08.png");
       background-repeat: repeat-x;
       height: 16px;
@@ -144,7 +147,7 @@
     }
 
 
-    &.sa-perf-grey06 {
+    &.perf-grey06 {
       background-image: url("../graphics/dot_grey06.png");
       background-repeat: repeat-x;
       height: 16px;
@@ -152,7 +155,7 @@
       margin: 15px -20px 25px -20px;
     }
 
-    &.sa-perf-wht {
+    &.perf-wht {
       background-image: url("../graphics/dot_white.png");
       background-repeat: repeat-x;
       height: 16px;
@@ -160,14 +163,14 @@
       margin: 15px -20px 25px -20px;
     }
 
-    &.sa-divide-space {
+    &.divide-space {
       height: 40px;
       background:none;
     }
   }
 
   .panel{
-    >.sa-perf-wht{
+    >.perf-wht{
         background-image: url("../graphics/dot_white.png");
         background-repeat: repeat-x;
         height: 16px;
@@ -175,7 +178,7 @@
         margin: 0px 0px 0px 0px;
       }
 
-    >.sa-perf-grey{
+    >.perf-grey{
       background-image: url("../graphics/dot_grey04.png");
       background-repeat: repeat-x;
       height: 16px;
@@ -194,78 +197,31 @@
 //  =====================================================================
 
 
+
+
+// Notices ===============================================================
+// Are in Typography
+
 // Status Lights ========================================================
+// Are in Typography
 
-.status{}
+// List Items ========================================================
+// Are in Typography
 
-.status:before{
-    content: "" ;
-    display: inline-block;
-    border-radius:50%;
-    border: 2px solid white;
-    float:left;
-    background-image: url("../graphics/panel_highlight.png");
-  }
-.status:hover:before{
-  font-family: 'Glyphicons Halflings';
-  content: "\e080" ;
-  text-align:center;
-  color:white;
+.user-guide-cover{
+  width: 100%;
+  // max-width:270px;
+  margin-bottom:20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); 
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); 
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
 }
-
-.status-alert:before{
-    background-color:$yellow;
-  }
-  .status-warning:before{
-    background-color:$orange;
-  }
-.status-complete:before{
-    background-color:$success;
-  }
-  .status-danger:before{
-    background-color:$danger;
-  }
-
-// END Status Lights ====================================================
-
-// Notice ===============================================================
-.sa-notice{
-  padding-top:1px;
-  margin-bottom:7px;
-  padding-bottom:8px;
-  border-bottom: 1px solid white;
-}
-.sa-notice:last-of-type{
-  border-bottom: none;
-  margin-bottom:-20px;
-}
-
-.sa-notice{ 
-  &.status:before{
-    height: 32px;
-    width: 32px;
-    background-size: 28px 28px;
-    background-repeat: no-repeat;
-  }
-  &.status:hover:before{
-    padding-top:3px;
-  }
-
-  h5, p{
-    margin:0 0 0 40px;
-  }
-  p{ margin-bottom:-3px;}
-}
-
-// END Notice ========================================================
-
-
-
 
 
 //  UI Components ==============================================================
 //  These should only be need for use in the UI pages.
 
 .ui-btn{ margin-bottom:10px;}
+
 
 
