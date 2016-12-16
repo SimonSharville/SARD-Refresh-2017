@@ -400,7 +400,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .panel-body{ }
 
-
+.panel-body, .button{ padding-top:8px;}
 
 
 
@@ -844,9 +844,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Bootstrap Specific Button Styles
 
-.btn-default { background-color: darken($turq, 10%); color:white!important;}
-.btn-default:visited { background-color: darken($turq, 10%); color:white!important;}
-.btn-default:hover { background-color: darken($turq, 20%); color:white!important;}
+.btn-default { background-color: darken($turq, 0%); color:white!important;}
+.btn-default:visited { background-color: darken($turq, 0%); color:white!important;}
+.btn-default:hover { background-color: darken($turq, 10%); color:white!important;}
 .btn-default:active,  { background-color: darken($turq, 20%)!important;}
 .btn-default:focus { background-color: darken($turq, 20%)!important;}
 
@@ -1250,6 +1250,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: black; 
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   letter-spacing: $vslight;
+  line-height:1.3em;
 }
 
 .popover.top > .arrow:after{ border-top-color: lighten($info, 5%)}
