@@ -4,9 +4,9 @@
  * Licensed under the MIT license
  */
 
-$(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip({container: 'body'}); 
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip({container: 'body',html: true}); 
       });
       $(function () {
-        $('[data-toggle="popover"]').popover({container: 'body'})
-      })
+        $('[data-toggle="popover"]').popover({container: 'body',html: true});
+      });

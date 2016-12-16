@@ -258,4 +258,38 @@
         color:$link-hover;
   }
 
+  // Box content ========================================================
 
+  .box-content{
+    .date {
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      background: $grey16;
+      color:white;
+      padding: 3px 10px;
+      margin: 10px -3px 8px -3px;
+      border-radius:20px;
+    }
+
+    .time {
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      border-top: 1px solid white;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .time:first-of-type{
+      border-top: none;
+      padding-top: 0px;
+    }
+
+    ul{ padding-left:10px; }
+    
+    a:link:before{
+        font-family: 'Glyphicons Halflings';
+        content: "\e131" ;
+        padding-right:5px;
+        vertical-align:middle;
+        color:$bodytext;
+      }
+      a:hover:before{color:$link-hover;}
+  }
