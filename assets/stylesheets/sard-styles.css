@@ -177,22 +177,39 @@ a:hover, a:focus .glyphicon-info-sign {
   background-image: url("../graphics/panel_highlight.png"); }
 
 .status:hover:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e080";
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   text-align: center;
   color: white; }
 
 .status-alert:before {
-  background-color: #FFB200; }
-
-.status-warning:before {
   background-color: #FF6A00; }
 
-.status-complete:before {
+.status-alert:hover:before {
+  content: "A"; }
+
+.status-warning:before {
+  background-color: #FFB200; }
+
+.status-warning:hover:before {
+  content: "W"; }
+
+.status-success:before {
   background-color: #33cc33; }
+
+.status-success:hover:before {
+  content: "S"; }
 
 .status-danger:before {
   background-color: #FF0000; }
+
+.status-danger:hover:before {
+  content: "D"; }
+
+.status-none:before {
+  background-color: transparent; }
+
+.status-none:hover:before {
+  content: "N"; }
 
 .notice {
   padding-top: 1px;

@@ -97,11 +97,7 @@
         <!-- Panels =============================================================== -->
         <!-- @import "ui-sections/panels.html" -->
 
-        <div class="row perf"></div> 
-
-        <!-- Alerts =============================================================== -->
-        <!-- @import "ui-sections/alerts.html" -->
-
+        
         <div class="row perf"></div> 
 
         <!-- Buttons =============================================================== -->
@@ -116,6 +112,16 @@
 
         <!-- Nav Tabs ============================================================== -->
         <!-- @import "ui-sections/tables.html" -->
+
+        <div class="row perf"></div> 
+
+        <!-- Alerts =============================================================== -->
+        <!-- @import "ui-sections/alerts.html" -->
+
+        <div class="row perf"></div> 
+
+        <!-- Nav Tabs ============================================================== -->
+        <!-- @import "ui-sections/status-alerts.html" -->
         
 
           
@@ -134,6 +140,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/javascripts/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip({container: 'body'}); 
+      });
+      $(function () {
+        $('[data-toggle="popover"]').popover({container: 'body'})
+      })
+    </script>
+
 
 
   </body>
