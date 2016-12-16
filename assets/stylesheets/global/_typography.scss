@@ -123,24 +123,48 @@
       background-image: url("../graphics/panel_highlight.png");
     }
   .status:hover:before{
-    font-family: 'Glyphicons Halflings';
-    content: "\e080" ;
+    // font-family: 'Glyphicons Halflings';
+    // content: "\e080" ;
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
     text-align:center;
     color:white;
   }
 
   .status-alert:before{
-    background-color:$yellow;
-  }
-  .status-warning:before{
     background-color:$orange;
   }
-.status-complete:before{
+  .status-alert:hover:before{
+    content: "A" ;
+  }
+
+  .status-warning:before{
+    background-color:$yellow;
+  }
+  .status-warning:hover:before{
+    content: "W" ;
+  }
+
+  .status-success:before{
     background-color:$success;
   }
+  .status-success:hover:before{
+    content: "S" ;
+  }
+
   .status-danger:before{
     background-color:$danger;
   }
+  .status-danger:hover:before{
+    content: "D" ;
+  }
+
+  .status-none:before{
+    background-color:transparent;
+  }
+  .status-none:hover:before{
+    content: "N" ;
+  }
+
 
   // END Status Lights ====================================================
 
