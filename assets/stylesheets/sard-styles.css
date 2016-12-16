@@ -299,6 +299,38 @@ a.link-arrow:before {
   vertical-align: middle;
   color: #007f7f; }
 
+.box-content .date {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  background: #403D3D;
+  color: white;
+  padding: 3px 10px;
+  margin: 10px -3px 8px -3px;
+  border-radius: 20px; }
+
+.box-content .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.box-content .time:first-of-type {
+  border-top: none;
+  padding-top: 0px; }
+
+.box-content ul {
+  padding-left: 10px; }
+
+.box-content a:link:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e131";
+  padding-right: 5px;
+  vertical-align: middle;
+  color: #211F0F; }
+
+.box-content a:hover:before {
+  color: #007f7f; }
+
 * {
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: grayscale !important;
@@ -631,6 +663,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .panel-heading h3 {
     font-family: 'robotolight', Helvetica, Arial, Sans-serif;
     font-size: 1.500em; }
+
+.panel-body, .button {
+  padding-top: 8px; }
 
 .panel-footer {
   border-radius: 0px;
@@ -1159,15 +1194,15 @@ button:hover {
   -webkit-appearance: none; }
 
 .btn-default {
-  background-color: #007f7f;
+  background-color: #00b2b2;
   color: white !important; }
 
 .btn-default:visited {
-  background-color: #007f7f;
+  background-color: #00b2b2;
   color: white !important; }
 
 .btn-default:hover {
-  background-color: #004c4c;
+  background-color: #007f7f;
   color: white !important; }
 
 .btn-default:active {
@@ -1586,7 +1621,8 @@ button:hover {
 .popover-content {
   color: black;
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-  letter-spacing: 0.025em; }
+  letter-spacing: 0.025em;
+  line-height: 1.3em; }
 
 .popover.top > .arrow:after {
   border-top-color: #1ad1ff; }
@@ -1722,12 +1758,19 @@ button:hover {
   background-position: -4px 0px;
   margin: 0px 0px 0px 0px; }
 
-.user-guide-cover {
+img.user-guide-cover {
   width: 100%;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); }
+
+.step-by-step {
+  padding-left: 5px;
+  padding-right: 3px;
+  padding-bottom: 0px; }
+  .step-by-step img {
+    width: 100%; }
 
 .ui-btn {
   margin-bottom: 10px; }
