@@ -6,7 +6,17 @@
 
 // Sections ===================================================================
 
-.sa-top-section{ }
+
+// This is a SARD Add on to the Navbar
+@media (min-width: 768px) {
+  .user-name{float:right;}
+}
+
+
+.sa-top-section{ 
+padding-left:0px;
+padding-right:0px;
+}
 
 .sa-main-section{ min-height: 100%;    
   padding-bottom: 60px;
@@ -17,16 +27,30 @@
    min-height: 100%;
 }
 
-.sa-footer-section{ }
+// .sa-footer-section{ }
 
-.sa-footer{
-  margin-bottom: -10px;
-}
-.sa-footer-content { 
+// .sa-footer{
+//   margin-bottom: -10px;
+// }
+// .sa-footer-content { 
+//   background-color:$grey18;
+//   color: $client-colour;
+//   height:40px;
+//   padding-top: 10px;
+//   a{color:white;}
+// }
+
+.new-footer{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
   background-color:$grey18;
   color: $client-colour;
   height:40px;
-  padding-top: 10px;
+  padding: 10px 10px 0px 10px;
   a{color:white;}
 }
 
@@ -34,7 +58,10 @@
 
 .sa-main-column{ } // If creating a 2 column layout like dashboard use this.
 
-.sa-side-column{ } // If creating a 2 column layout like dashboard use this.
+.sa-side-column{ 
+padding-left:16px;
+padding-right:16px;
+} // If creating a 2 column layout like dashboard use this.
 
 
 // SARD Incidentals =================================================================
@@ -51,7 +78,7 @@
 }
 
 .row-grey{ 
-  background-color:$grey02;
+  background-color:$grey10;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -74,45 +101,41 @@
 
 
 // Top Nav =====================================================================
-.sa-top-nav {
-  .navbar{
-    margin-bottom: 0px;
-  }
+// You will only nee this if we re-introduce the top nav section
 
-  .navbar-brand{
-    padding: 15px 10px;
-  }
+// .sa-top-nav {
+//   .navbar{
+//     margin-bottom: 0px;
+//   }
 
-  /* Extra Small Devices, Phones */ 
-  @media only screen and (max-width : 767px) {
-    .navbar-form{
-      margin-left:  0px;
-      margin-right:  0px;
-      padding:      0px 15px;
-      border-top:   0px;
-      border-bottom:   0px;
-      box-shadow: none;
-    }
+//   .navbar-brand{
+//     padding: 15px 10px;
+//   }
 
-    .navbar-nav{
-      margin: 5px 0px 0px 0px;
-    }
-  }
+//   /* Extra Small Devices, Phones */ 
+//   @media only screen and (max-width : 767px) {
+//     .navbar-form{
+//       margin-left:  0px;
+//       margin-right:  0px;
+//       padding:      0px 15px;
+//       border-top:   0px;
+//       border-bottom:   0px;
+//       box-shadow: none;
+//     }
 
-  /* Small Devices, Tablets */
-  @media only screen and (min-width : 768px) {
-    .nav > li > a{
-      padding:      15px 0px;
-    }
+//     .navbar-nav{
+//       margin: 5px 0px 0px 0px;
+//     }
+//   }
 
-  }
-} // End top-nav
+//   /* Small Devices, Tablets */
+//   @media only screen and (min-width : 768px) {
+//     .nav > li > a{
+//       padding:      15px 0px;
+//     }
 
-
-// .navBot li  {
-//     display:inline-block;    
-// }
-
+//   }
+// } // End top-nav
 
 
 
@@ -122,17 +145,28 @@
   border-top: 1px solid $grey08;
   margin:20px 10px 20px 10px;
 }
-  .row{
-    &.perf {
-      background-image: url("../graphics/dot_grey08.png");
+
+.perf {
+      background-image: url("../graphics/dot_grey04.png");
       background-repeat: repeat-x;
       height: 16px;
       background-position: -4px 0px;
-      margin: 15px -20px 25px -20px;
+      margin: 15px -24px 25px -24px;
+    }
+
+
+  .row{
+    .perf {
+      // background-image: url("../graphics/dot_grey08.png");
+      // background-repeat: repeat-x;
+      // height: 16px;
+      // background-position: -4px 0px;
+      // margin: 15px -20px 25px -20px;
+      margin: 15px -9px 25px -9px;
     }
 
     &.row-between-perfs{
-      margin: -33px -20px -24px -20px;
+      margin: -33px -24px -24px -24px;
       padding-bottom:20px;
     }
 
@@ -141,7 +175,7 @@
       height: 26px;
       margin-left: -20px;
       margin-right: -20px;
-      background: url('../graphics/dot_grey08.png');
+      background: url('../graphics/dot_grey04.png');
       background-repeat: repeat-x;
       background-position: -4px -8px;
     }

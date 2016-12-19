@@ -11,7 +11,9 @@
 .page-header{
   margin-top: 0px;
   margin-bottom: 20px;
-  padding: 10px 10px 30px 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 10px 15px 30px 15px;
   border-bottom: 1px solid $grey04;
 }
 
@@ -68,14 +70,14 @@
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: $grey18;
-  background-color: transparent;
+  color: #fff;
+  background-color: darken($client-colour, 15%);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: $client-colour-very-dark;
+  background-color: darken($client-colour, 15%);
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -113,18 +115,18 @@
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: $client-colour-very-dark;
+  background-color: darken($client-colour, 15%);
 }
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #555555;
-  background-color: #de0000;
+  color: #fff;
+  background-color: darken($client-colour, 15%);
 }
 .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-  color: #cccccc;
+  color: #fff;
   background-color: transparent;
 }
 // END dropdown
@@ -132,23 +134,23 @@
 // Small screens --------------------------------------------------------
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #fff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
-    background-color: transparent;
+    color: #fff;
+    background-color: darken($client-colour, 15%);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
-    background-color: #de0000;
+    color: #fff;
+    background-color: darken($client-colour, 15%);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #cccccc;
+    color: #fff;
     background-color: transparent;
   }
 }
@@ -174,7 +176,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #cccccc;
 }
 
-// END Navbar Default --------------------------------------------------
+
+
+// END Navbar Default ==================================================================
+
+
+
 
 // Nav Tabs ============================================================
 // These are taken from bootstrap-example-code.css and amended
@@ -379,6 +386,28 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 
 // END Nav Tabs --------------------------------------------------------
+
+// Breadcrumb ===========================================================================
+.breadcrumb {
+  padding: 6px 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0px;
+  border-bottom: 1px solid $grey04;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: $grey08;
+}
+.breadcrumb > .active {
+  color: $client-colour-dark;
+}
 
 // Panels ===============================================================================
 

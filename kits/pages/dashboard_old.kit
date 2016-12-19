@@ -28,62 +28,21 @@
 
   <div class="container sa-top-section">
 
-   <!-- ============================================================================ -->
+    <!-- ============================================================================ -->
+    <!-- Top Navigation -->
+    <!-- @import "../sections/top-nav.html" -->
+
+
+    <!-- ============================================================================ -->
     <!-- Jumbotron -->
-    
-    <a href="index.html">
-      <div class="jumbotron">
-          <img src="assets/images/header-placement.png" alt="SARD">
-      </div>
-    </a>
+    <!-- @import "../sections/jumbotron.html" -->
 
 
     <!-- ============================================================================ -->
     <!-- Main Navigation -->
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- <a class="navbar-brand" href="#">Bootstrap theme</a> -->
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#appraisal">Apprasial</a></li>
-          <li><a href="#edocs">eDocs</a></li>
-          <li><a href="#msf">MSF</a></li>
-          <li><a href="#jobplan">Job Plan</a></li>
-          <li><a href="#eleave">eLeave</a></li>
-          <li><a href="#ecalendar">eCalendar</a></li>
-        </ul>
-        <ul class="nav navbar-nav user-name">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Name <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Preferences</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Log Out</a></li>
-                  </ul>
-                </li>
-              </ul>
-      </div>  <!-- END nav-collapse -->
-    </nav>  <!-- END NAVIGATION -->
-    
+    <!-- @import "../sections/main-nav.html" -->
 
-    <!-- ============================================================================ -->
-    <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="index.html">Home</a></li>
-      <li class="active">Dashboard</li>
-    </ol>
+    
 
   </div>  <!-- END top-section -->
 
@@ -92,8 +51,8 @@
   <div class="container sa-main-section">
 
 
-    <!-- ============================================================================ -->
-    <!-- Page Header -->
+  <!-- ============================================================================ -->
+  <!-- Page Header -->
     <div class=" page-header">
 
       <div class="row">
@@ -116,16 +75,17 @@
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-    <div class="row sa-main-content">
 
-      
+    <div class="sa-main-content">
+
+      <div class="row">  <!-- Outer Row -->
         <div class="col-md-3 col-md-push-9 sa-side-column">
 
             <div class="row">  <!-- Row for top 2 panels -->
               <div class="col-sm-6 col-md-12">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et conseuqat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis. Proin tempus mi id tortor elementum lobortis eu quis dui. In id nisl congue, fermentum risus eget, fringilla tellus. Phasellus auctor diam vel porta efficitur. Nunc quis ante a mi egestas vulputate eget eu arcu. Nam dui arcu, commodo eu congue at, imperdiet maximus leo."></a></h3>
+                    <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis. Proin tempus mi id tortor elementum lobortis eu quis dui. In id nisl congue, fermentum risus eget, fringilla tellus. Phasellus auctor diam vel porta efficitur. Nunc quis ante a mi egestas vulputate eget eu arcu. Nam dui arcu, commodo eu congue at, imperdiet maximus leo."></a></h3>
                   </div>
                   <div class="panel-body">
                     <div class="notice status status-success">
@@ -277,13 +237,13 @@
 
             </div> <!-- END Row for bottom panels -->
 
+
+
         </div> <!-- END sa-side-column -->
 
         <!-- ==================================================================== -->
 
-        <div class="perf mobile-only">
-          <!-- <div class=" perf "></div> -->
-        </div>
+        <div class="row perf mobile-only"></div>
 
         <!-- ==================================================================== -->
 
@@ -410,28 +370,23 @@
             </div>
           </div> <!-- END Panel -->
 
+
         </div> <!-- END sa-main-column -->
+
+
 
         <!-- ==================================================================== -->
 
-      
+      </div> <!-- END Outer Row -->
+ 
 
-    </div> <!-- END ROW sa-Main Content -->
+
+    </div> <!-- END sa-Main Content -->
   </div>  <!-- END sa-Main Section -->
   <!-- ============================================================================ -->
   <!-- Footer -->
-  
-  
-  <!-- <div class="row"> -->
-  <div class="container new-footer">
-          <div class=" col-xs-6">
-            © <a href="http://www.sardjv.co.uk/" target="new">SARD JV</a>
-          </div>
-          <div class=" col-xs-6 text-right">
-            Design: <a href="http://www.simonsharville.co.uk" target="new">SiDe</a>
-          </div>
-  </div>
-  <!-- </div> -->
+  <!-- @import "../sections/footer.html" -->
+
   <!-- ============================================================================ -->
 
 
