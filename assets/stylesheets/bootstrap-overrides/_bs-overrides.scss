@@ -47,6 +47,13 @@
   }
 }
 
+@media (min-width: 768px){
+  .navbar-right {
+    float: right !important;
+    margin-right: 0px;
+  }
+}
+
 .navbar-default {
   background-color: $client-colour-dark;
   // border-color: #de0000;
