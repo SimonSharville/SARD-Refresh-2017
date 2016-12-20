@@ -112,19 +112,19 @@
   
   // Status Lights ========================================================
 
-  .status{}
-
-  .status:before{
-      content: "" ;
-      display: inline-block;
-      border-radius:50%;
-      border: 2px solid white;
-      float:left;
-      background-image: url("../graphics/panel_highlight.png");
-    }
-  .status:hover:before{
+  .status{
     // font-family: 'Glyphicons Halflings';
     // content: "\e080" ;
+  }
+
+  .status:before{
+    content: "" ;
+    display: inline-block;
+    border-radius:50%;
+    border: 2px solid white;
+    float:left;
+    background-image: url("../graphics/panel_highlight.png");
+
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
     text-align:center;
     color:white;
@@ -132,37 +132,29 @@
 
   .status-alert:before{
     background-color:$orange;
-  }
-  .status-alert:hover:before{
     content: "A" ;
   }
 
   .status-warning:before{
     background-color:$yellow;
-  }
-  .status-warning:hover:before{
     content: "W" ;
   }
 
   .status-success:before{
     background-color:$success;
-  }
-  .status-success:hover:before{
     content: "S" ;
   }
 
   .status-danger:before{
     background-color:$danger;
-  }
-  .status-danger:hover:before{
     content: "D" ;
   }
 
   .status-none:before{
     background-color:transparent;
-  }
-  .status-none:hover:before{
     content: "N" ;
+    color:$grey10;
+    border-color:$grey10;
   }
 
 
@@ -186,10 +178,9 @@
       width: 32px;
       background-size: 28px 28px;
       background-repeat: no-repeat;
-    }
-    &.status:hover:before{
       padding-top:3px;
     }
+    &.status:hover:before{ }
 
     h5, h6, p{
       margin:0 0 0 40px;
