@@ -174,42 +174,32 @@ a:hover, a:focus .glyphicon-info-sign {
   border-radius: 50%;
   border: 2px solid white;
   float: left;
-  background-image: url("../graphics/panel_highlight.png"); }
-
-.status:hover:before {
+  background-image: url("../graphics/panel_highlight.png");
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   text-align: center;
   color: white; }
 
 .status-alert:before {
-  background-color: #FF6A00; }
-
-.status-alert:hover:before {
+  background-color: #FF6A00;
   content: "A"; }
 
 .status-warning:before {
-  background-color: #FFB200; }
-
-.status-warning:hover:before {
+  background-color: #FFB200;
   content: "W"; }
 
 .status-success:before {
-  background-color: #33cc33; }
-
-.status-success:hover:before {
+  background-color: #33cc33;
   content: "S"; }
 
 .status-danger:before {
-  background-color: #FF0000; }
-
-.status-danger:hover:before {
+  background-color: #FF0000;
   content: "D"; }
 
 .status-none:before {
-  background-color: transparent; }
-
-.status-none:hover:before {
-  content: "N"; }
+  background-color: transparent;
+  content: "N";
+  color: #A39E9C;
+  border-color: #A39E9C; }
 
 .notice {
   padding-top: 1px;
@@ -225,9 +215,7 @@ a:hover, a:focus .glyphicon-info-sign {
   height: 32px;
   width: 32px;
   background-size: 28px 28px;
-  background-repeat: no-repeat; }
-
-.notice.status:hover:before {
+  background-repeat: no-repeat;
   padding-top: 3px; }
 
 .notice h5, .notice h6, .notice p {
@@ -404,6 +392,11 @@ body {
   .navbar-collapse {
     padding-left: 0px;
     padding-right: 0px; } }
+
+@media (min-width: 768px) {
+  .navbar-right {
+    float: right !important;
+    margin-right: 0px; } }
 
 .navbar-default {
   background-color: #007f7f;
@@ -1675,7 +1668,7 @@ button:hover {
   border-left-color: #1ad1ff; }
 
 @media (min-width: 768px) {
-  .user-name {
+  .settings-tab {
     float: right; } }
 
 .sa-top-section {
@@ -1793,9 +1786,13 @@ button:hover {
   background-position: -4px 0px;
   margin: 0px 0px 0px 0px; }
 
+.row .doc-covers {
+  padding: 0px 8px; }
+
 img.user-guide-cover {
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); }
