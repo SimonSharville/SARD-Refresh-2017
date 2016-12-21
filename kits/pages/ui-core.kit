@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SARD Style Guide</title>
+    <title>SARD UI Core Elements</title>
 
     <!-- Bootstrap -->
     <link href="assets/stylesheets/bootstrap.css" rel="stylesheet">
@@ -20,12 +20,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body id="index-page">
-    <a href="#index-page" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
+  <body id="ui-kop">
+  <a href="#ui-kop" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
 
 
   <div class="container sa-top-section">
-
+    
 
 
     <!-- ============================================================================ -->
@@ -37,6 +37,13 @@
     <!-- Main Navigation -->
     <!-- @import "../sections/main-nav.html" -->
 
+    <!-- ============================================================================ -->
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li class="active">UI Core Elements</li>
+    </ol>
+
     
 
   </div>  <!-- END top-section -->
@@ -46,21 +53,18 @@
   <div class="container sa-main-section">
 
 
-  <!-- ============================================================================ -->
-  <!-- Page Header -->
+    <!-- ============================================================================ -->
+    <!-- Page Header -->
     <div class=" page-header">
 
       <div class="row">
           <div class="profile-image pull-left">
-            <img src="assets/images/profile-image.jpg" alt="Profile Image">
+            <img src="assets/graphics/flower-circle.png" alt="Profile Image">
           </div>
 
           <div class="">
-            <div class="user-name">
-              User Name
-            </div>
-            <div class="page-title">
-              Style Guide
+            <div class="ui page-title">
+              UI Core Elements
             </div>
           </div>
 
@@ -73,38 +77,28 @@
 
     <div class="sa-main-content">
 
-      <div class="row">
-        <div class="col-xs-12">
-            <h3>Welcome to the SARD Appraisal System Style Guide</h3>
-            <p> Every effort has been made to be as clear as possible, but if you notice anything missing or have any questions, please contact me at <a href="mailto:design@simonsharville.co.uk?Subject=SARD style guide">design@simonsharville.co.uk</a></p>
-            
-            <p>The system is built on the Bootstrap framework and wherever possible uses their standard components styled to fit the SARD identity. When this is not possible we have created a SARD specific component, these have a SARD specific sub-class added. i.e. a bootstrap Alert will have a class of <code>class="alert alert-success"</code> while a SARD specific Alert will have a class of <code>class="alert alert-MRv".</code></p>
 
-        </div> <!-- END Column -->
-      </div> <!-- END Row -->
+        <div class="row">
+          <div class="col-xs-12">
+              <h4>This is the UI Kit of Parts page. </br>
+                It shows examples of any bootstrap components as well as any SARD specific components used in the SARD system.</h4>
+          </div> <!-- END Column -->
+        </div> <!-- END Row -->
+        <div class="row perf"></div> 
+      
+        <!-- Typography =============================================================== -->
+        <!-- @import "ui-sections/typography.html" -->
 
-      <div class="row perf"></div>
+        <div class="row perf"></div> 
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h4>For this wireframe we haven't made all the navigation as live links, instead click on any link below to visit that page, to return to this menu just click on the the Header image.</h4>
-          <h3>UI Style Guide</h3>
-          <ul class="">
-            <h4><li class="link-arrow"><a href="ui-kop.html">UI Kit of Parts</a></li> </h4>
-            <h4><li class="link-arrow"><a href="ui-core.html">UI Core Elements</a></li> </h4>
-            <h4><li class="link-arrow"><a href="ui-bootstrap.html">UI Bootstrap components</a></li> </h4> 
-            <h4><li class="link-arrow"><a href="ui-sard.html">UI SARD components</a></li> </h4>   
-          </ul>
-          <h3>Page designs</h3>
-          <ul class="">
-            <h4><li class="link-arrow"><a href="dashboard.html">Dashboard</a></li> </h4>    
-          </ul>
-          <h3>Experiements</h3>
-          <ul class="">
-            <h4><li class="link-arrow"><a href="index-sidebar.html">NOT Completed - An attempt at adding a sidebar to the main contant area</a></li></h4>
-          </ul>
-        </div> <!-- END Column -->
-      </div> <!-- END Row -->
+        <!-- Perforations =============================================================== -->
+        <!-- @import "ui-sections/perforations.html" -->
+          
+
+
+        
+
+          
 
 
     </div> <!-- END Main Content -->
@@ -124,6 +118,7 @@
 
     <!-- http://www.paulund.co.uk/how-to-create-an-animated-scroll-to-top-with-jquery -->
     <script type="text/javascript" src="assets/javascripts/smoothscroll.js"></script>
+
 
 
   </body>
