@@ -145,8 +145,8 @@
                   <div class="panel-body">
                       <ul class="list-group doc-list">
                         <li class="group">Trust Policy Documents</li>
-                        <li class="grouped"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/52b/463/15e/3e1/f15/747/000/3f2/original/appraisal.txt?1387553885" target="_blank">Appraisal Policy</a></li>
-                        <li class="grouped"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/57e/13f/4f8/025/420/c86/000/005/original/GSTT_DBS_declaration.docx?1474379599" target="_blank">DBS Declaration</a></li>
+                        <li class="grouped link-icon"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/52b/463/15e/3e1/f15/747/000/3f2/original/appraisal.txt?1387553885" target="_blank">Appraisal Policy</a></li>
+                        <li class="grouped link-icon"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/57e/13f/4f8/025/420/c86/000/005/original/GSTT_DBS_declaration.docx?1474379599" target="_blank">DBS Declaration</a></li>
                         </ul>
                   </div>
                 </div> <!-- END Panel -->
@@ -286,7 +286,7 @@
             <div class="panel-heading">
               <h3 class="panel-title">Your Notifications</h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body link-icon">
               <div class="box-content content">
               <p class="date">Sat, 10 Dec 2016</p>
               <ul>
@@ -309,8 +309,8 @@
                 <h6 class="time">03:33 PM</h6>
                 <li><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></li>
                 <h6 class="time">03:32PM</h6>
-                <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></li>
-                <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></p></li>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></p></li>
               </ul>
               </div>
             </div>
@@ -325,39 +325,52 @@
               <h3 class="panel-title">Appraisals</h3>
             </div>
 
-            <div class="panel-body panel-table">
-              <table class="table table-hover">
+            <div class="panel-body panel-table table-responsive">
+              <table class="table table-hover link-icon">
                 <caption>This is an optional table caption.</caption>
                 <thead>
                   <tr>
-                    <th>state</th>
+                    <th class="status-col"></th>
                     <th>Title</th>
+                    <th>Date</th>
                     <th>Docs</th>
                     <th>Portfolio</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>State</td>
+                    <td class="status-col">
+                      <div class="status status-alert"></div>
+                    </td>
+                    <td><p><a href="#">Appraisal Jul 2016</a></p></td>
+                    <td>01 Jul 2016</td>
+                    <td><p><a href="#" target="_blank">AppraisalPDF </a></p>
+                    <p><a href="#" target="_blank">PortfolioPDF </a></p>
+                    <p><a href="#" target="_blank">Medical Educators Framework Areas PDF</a></p>
+                    <p><a href="#" target="_blank">SummaryPDF </a></p></td>
+                    <td><p><a href="#">Portfolio Jul 2016</a></p></td>
+                  </tr>
+                  <tr>
+                    <td class="status-col">
+                      <div class="status status-danger"></div></td>
                     <td>Title</td>
+                    <td>Date</td>
                     <td>Doc</td>
                     <td>Portfolio</td>
                   </tr>
                   <tr>
-                    <td>State</td>
+                    <td class="status-col">
+                      <div class="status status-success"></div></td>
                     <td>Title</td>
+                    <td>Date</td>
                     <td>Doc</td>
                     <td>Portfolio</td>
                   </tr>
                   <tr>
-                    <td>State</td>
+                    <td class="status-col">
+                      <div class="status status-alert"></div></td>
                     <td>Title</td>
-                    <td>Doc</td>
-                    <td>Portfolio</td>
-                  </tr>
-                  <tr>
-                    <td>State</td>
-                    <td>Title</td>
+                    <td>Date</td>
                     <td>Doc</td>
                     <td>Portfolio</td>
                   </tr>
