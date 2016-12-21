@@ -44,7 +44,7 @@ $danger:                #FF0000;
 $alert:                 $pink;
 
 
-// Colour Mixins ===================
+// Global Mixins ===================
 $background:            $grey04;
 
 $client-colour:                $turq; 
@@ -54,3 +54,7 @@ $client-colour-dark:           darken($client-colour, 10%);
 $client-colour-very-dark:      darken($client-colour, 20%);
 
 $panelBaseGrey:         $grey03;
+
+// Admin Mixins ====================
+
+$admin-colour:                $pink;

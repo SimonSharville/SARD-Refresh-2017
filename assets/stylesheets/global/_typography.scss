@@ -65,7 +65,23 @@
   p {
     font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.000em;
+    // line-height: 1.5em;
   }
+
+  .table p { // This adjust the spacing and endents of multi line links in a table
+    padding-left: 1.25em;
+    text-indent:-1.25em;
+    margin-bottom:0.5em;
+    line-height: 1.3em;
+  }
+  li p { // This adjust the spacing and endents of multi line links in a list
+    padding-left: 1.25em;
+    text-indent:-1.25em;
+    margin-bottom:0.5em;
+    line-height: 1.3em;
+  }
+
+
 
   strong{ 
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
@@ -157,6 +173,25 @@
     border-color:$grey10;
   }
 
+// Table specific Status Lights ================
+.table div{ 
+    &.status:before{
+      height: 30px;
+      width: 30px;
+      background-size: 28px 28px;
+      background-repeat: no-repeat;
+      padding-top:3px;
+      padding-left:1px;
+    }
+    &.status-alert:before{ padding-left:1px; }
+    &.status-danger:before{ padding-left:2px; }
+  }
+
+  .status-col{ 
+    padding: 4px 0px 4px 12px !important; 
+    width:20px;
+  }
+
 
   // END Status Lights ====================================================
 
@@ -178,8 +213,10 @@
       width: 32px;
       background-size: 28px 28px;
       background-repeat: no-repeat;
-      padding-top:3px;
+      padding-top:4px;
     }
+    &.status-alert:before{ padding-left:2px; }
+    &.status-danger:before{ padding-left:2px; }
     &.status:hover:before{ }
 
     h5, h6, p{
@@ -205,6 +242,20 @@
     list-style-type: none;
   }
 
+  .link-icon{ // This places the arrow icon in front of a text link
+    a:link:before{
+      font-family: 'Glyphicons Halflings';
+      content: "\e131" ;
+      padding-right:5px;
+      vertical-align:middle;
+      color:$client-colour;
+    }
+    a:visited:before{color:$client-colour;}
+
+    
+  }
+
+
   .list-group{ // Used in Dashboard/Support Docs panel .doc-list
     margin-bottom:0px;
     .group{
@@ -226,18 +277,18 @@
       padding-bottom:5px;
       margin-bottom:5px;
 
-      a:link{ color:$bodytext;}
-      a:visited{ color:$bodytext;}
-      a:hover{ color:$link-hover;}
-      a:active{ color:$link-hover;}
-      a:link:before{
-        font-family: 'Glyphicons Halflings';
-        content: "\e131" ;
-        padding-right:5px;
-        vertical-align:middle;
-        color:$link-hover;
-      }
-      a:visited:before{color:$link-hover;}
+      // a:link{ color:$bodytext;}
+      // a:visited{ color:$bodytext;}
+      // a:hover{ color:$link-hover;}
+      // a:active{ color:$link-hover;}
+      // a:link:before{
+      //   font-family: 'Glyphicons Halflings';
+      //   content: "\e131" ;
+      //   padding-right:5px;
+      //   vertical-align:middle;
+      //   color:$client-colour;
+      // }
+      // a:visited:before{color:$client-colour;}
     }
   }
 
@@ -246,12 +297,13 @@
         content: "\e131" ;
         padding-right:5px;
         vertical-align:middle;
-        color:$link-hover;
+        color:$client-colour;
+        a:visited:before{color:$client-colour;}
   }
 
   // Box content ========================================================
 
-  .box-content{
+  .box-content{ // Used on Dashboard/Notifications
     .date {
       font-family: 'robotobold', Helvetica, Arial, Sans-serif;
       background: $grey16;
@@ -272,15 +324,5 @@
       border-top: none;
       padding-top: 0px;
     }
-
     ul{ padding-left:10px; }
-    
-    a:link:before{
-        font-family: 'Glyphicons Halflings';
-        content: "\e131" ;
-        padding-right:5px;
-        vertical-align:middle;
-        color:$bodytext;
-      }
-      a:hover:before{color:$link-hover;}
   }
