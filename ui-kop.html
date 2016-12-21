@@ -93,8 +93,8 @@
   <div class="container sa-main-section">
 
 
-  <!-- ============================================================================ -->
-  <!-- Page Header -->
+    <!-- ============================================================================ -->
+    <!-- Page Header -->
     <div class=" page-header">
 
       <div class="row">
@@ -209,13 +209,13 @@
         <!-- Panels - Bootstrap defaults ========================================== -->
         
         <div class="row">
-            <div class="col-xs-12">
-              <h1>Panels - Bootstrap defaults</h1>
-              <h4>All panels need to sit within a DIV with col-widths</h4>
-              <h4>i.e. <code>&lt;div class="col-md-6"&gt;</code></h4>
-              <p>&nbsp;</p>
-            </div> <!-- END Column -->
-          </div> <!-- END Row -->
+          <div class="col-xs-12">
+            <h1>Panels - Bootstrap defaults</h1>
+            <h4>All panels need to sit within a DIV with col-widths</h4>
+            <h4>i.e. <code>&lt;div class="col-md-6"&gt;</code></h4>
+            <p>&nbsp;</p>
+          </div> <!-- END Column -->
+        </div> <!-- END Row -->
         
         <div class="row">
           <div class="col-xs-12">
@@ -724,8 +724,8 @@
         
         
         
-          <h3> Bootstrap buttons </h3>
-              <p> These are the default Bootstrap buttons styled for use with SARD, the last one, link, deemphasises a button by making it look like a link while maintaining button behavior </p>
+          <h4> These are the default Bootstrap buttons styled for use with SARD, the last one, link, deemphasises a button by making it look like a link while maintaining button behavior </h4>
+              
         
           <div class="row">
             <div class="col-xs-6 col-sm-3">
@@ -766,7 +766,7 @@
         <!-- Nav tabs -->
         <div class="row row-indent">
         
-          <!-- Nav tabs -->
+          <!-- Tabs -->
           <ul class="nav nav-tabs nav-justified" role="tablist">
             <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
             <li role="presentation"><a href="#panel" aria-controls="panel" role="tab" data-toggle="tab">Panel</a></li>
@@ -774,11 +774,11 @@
             <li role="presentation" class="dropdown" role="tablist">
               <a href="#" class="dropdown-toggle" id="myTabDrop1" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">Dropdown <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents"> <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li> <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li> </ul>
+              <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents"> <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">Item One</a></li> <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">Item Two</a></li> </ul>
             </li>
-          </ul>
+          </ul> <!-- END Tabs -->
         
-          <!-- Tabs -->
+          <!-- Tabs Contents-->
           <div class="tab-content">
         
             <div role="tabpanel" class="tab-pane active" id="info">
@@ -819,9 +819,9 @@
         
             <div class="tab-pane fade" role="tabpanel" id="dropdown2" aria-labelledby="dropdown2-tab"> <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p> </div>
         
-          </div>
+          </div> <!-- END Tab Content -->
         
-        </div>
+        </div><!-- Nav tabs -->
         
         
 
@@ -1518,32 +1518,46 @@
 
         <div class="row perf"></div> 
 
-        <!-- Nav Tabs ============================================================== -->
+        <!-- Status Alerts ============================================================== -->
         <div class="row">
           <div class="col-xs-12">
             <h1>Status Alerts</h1>
-            <h4>This sections shows status alerts as well as tool tips and popovers</h4>
+            <h4>This sections shows status alerts as well as tool tips and popovers.</h4>
+            <h4>These are all within a Panel, BUT NOT within a Table.</h4>
             <h4>&nbsp;</h4>
           </div> <!-- END Column -->
         </div> <!-- END Row -->
         
+        
+        
+        
         <div class="row">
           <div class="col-xs-12">
             <h4>Status Alerts</h4>
-            <p>Staus alerts are designed to show the status of a document in a list by colour coding. They follow the same principles of the Bootstrap alerts.</br>
-             They also have their status initial within them on rollover.</br>
+            <p>Status alerts are designed to show the status of a document in a list by colour coding.</br> They follow the same principles of the Bootstrap alerts but also have their status initial within them.</br>
               Success = Green</br>
               Warning = Yellow</br>
               Danger - Red</br>
-              We have also added</br>
+            </p>
+            <p>We have also added</br>
               Alert = Orange</br>
               None = Clear
             </p>
-          </div>
-        </div>
+          </div> <!-- END Column -->
+        </div> <!-- END Row -->
+        
+        
+        
+        
+        
+        
         <div class="row">
-          <div class="col-sm-6 col-md-6">
-            <div class="panel panel-default">
+        
+          <!-- Notice Panel ============================================================================== -->
+        
+           <div class="col-sm-6 col-md-6">
+        
+             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
               </div>
@@ -1586,24 +1600,131 @@
                 </div>
               </div>
             </div> <!-- END Panel -->
-          </div> <!-- END Col -->
+        
+          </div> <!-- END Column -->
         
           <div class="col-sm-6 col-md-6">
             <h4>Tooltips</h4>
-            <p>Tooltips are added by using a link with NO url, like this:</br>
-              <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  
-                        data-toggle="tooltip" 
-                        title="This is an example of a tootip."&gt;&lt;/a&gt;</code>
-            </p>
-            <h4>Popovers</h4>
             <p>Popovers are added by using a link with NO url, like this:</br>
               <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add popover title here" data-placement="bottom" data-content="Add popover content here."&gt;&lt;/a&gt;</code>
             </p>
             <p>Tooltips are activated by hovering over them while Popovers are activated by clicking on them.</br>
-              To avoid visual clutter all are set to float right of the list item they are within.</p>
-          </div> <!-- END Col -->
+              To avoid visual clutter all are set to float right of the list item they are within.
+            </p>
+          </div> <!-- END Column -->
         
-        <div> <!-- END Row -->
+        
+        </div> <!-- END Row -->
+        
+        
+        
+        
+
+        <div class="row perf"></div> 
+
+        <!-- Status Alerts ============================================================== -->
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Status Alerts</h1>
+            <h4>This sections shows status alerts as well as tool tips and popovers.</h4>
+            <h4>These are all within a Panel, BUT NOT within a Table.</h4>
+            <h4>&nbsp;</h4>
+          </div> <!-- END Column -->
+        </div> <!-- END Row -->
+        
+        
+        
+        
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Status Alerts</h4>
+            <p>Status alerts are designed to show the status of a document in a list by colour coding.</br> They follow the same principles of the Bootstrap alerts but also have their status initial within them.</br>
+              Success = Green</br>
+              Warning = Yellow</br>
+              Danger - Red</br>
+            </p>
+            <p>We have also added</br>
+              Alert = Orange</br>
+              None = Clear
+            </p>
+          </div> <!-- END Column -->
+        </div> <!-- END Row -->
+        
+        
+        
+        
+        
+        
+        <div class="row">
+        
+          <!-- Notice Panel ============================================================================== -->
+        
+           <div class="col-sm-6 col-md-6">
+        
+             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
+              </div>
+              <div class="panel-body">
+                <div class="notice status status-success">
+                  <a href="">
+                    <h6>Status Success</h6>
+                    <p>This is an example of a Status Success.</p>
+                  </a>
+                </div>
+                <div class="notice status status-warning">
+                  <a href="">
+                    <h6>Status Warning</h6>
+                    <p>This is an example of a Status Warning.</p>
+                  </a>
+                </div>
+                <div class="notice status status-alert">
+                  <a href="">
+                    <h6>Status Alert</h6>
+                    <p>This is an example of a Status Alert.</p>
+                  </a>
+                </div>
+                <div class="notice status status-danger">
+                  <a class="pull-right glyphicon glyphicon-info-sign"  
+                  data-toggle="tooltip" 
+                  title="This is an example of a tootip."></a>
+                  <a href="">
+                    <h6>Status Danger</h6>
+                    <p>This is an example of a Status Danger.</p>
+                  </a>
+                </div>
+                <div class="notice status status-none">
+                  <a class="pull-right glyphicon glyphicon-info-sign"  
+                  data-toggle="tooltip" 
+                  title="This is an example of a tootip."></a>
+                  <a href="">
+                    <h6>Status None</h6>
+                    <p>This is an example of a Status None.</p>
+                  </a>
+                </div>
+              </div>
+            </div> <!-- END Panel -->
+        
+          </div> <!-- END Column -->
+        
+          <div class="col-sm-6 col-md-6">
+            <h4>Tooltips</h4>
+            <p>Popovers are added by using a link with NO url, like this:</br>
+              <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add popover title here" data-placement="bottom" data-content="Add popover content here."&gt;&lt;/a&gt;</code>
+            </p>
+            <p>Tooltips are activated by hovering over them while Popovers are activated by clicking on them.</br>
+              To avoid visual clutter all are set to float right of the list item they are within.
+            </p>
+          </div> <!-- END Column -->
+        
+        
+        </div> <!-- END Row -->
+        
+        
+        
+        
+
+
         
 
           
