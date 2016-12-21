@@ -1217,6 +1217,27 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .table-hover > tbody > tr:hover {background-color: darken($danger, 5%);}
 }
 
+// Table column variations - Use these within the td to adjust it's width.
+// Table column widths must add up to 100% in total, or leave columns empty and it will fill to fit.
+// You should only need to apply this to the top table head or table cell in a column.
+.tcol-66 { width:66%; } 
+.tcol-50 { width:50%; }
+.tcol-45 { width:45%; }
+.tcol-41 { width:41%; }
+.tcol-40 { width:40%; }
+.tcol-39 { width:39%; }
+.tcol-33 { width:33%; }
+.tcol-30 { width:30%; }
+.tcol-25 { width:25%; }
+.tcol-20 { width:20%; }
+.tcol-15 { width:15%; }
+.tcol-14 { width:14%; }
+.tcol-10 { width:10%; }
+.tcol-5 { width:5%; }
+
+// These are fixed variations on the above
+.tcol-fixed-50 { width:50px; }
+.tcol-fixed-5 { width:5px; }
 
 // END Tables ===================================================================================
 
